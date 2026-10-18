@@ -55,10 +55,20 @@ export async function POST(req: Request) {
       }
     }
 
-    // Local file storage
-    const uploadDir = path.resolve(process.cwd(), 'public', 'uploads');
-    if (!fs.existsSync(uploadDir)) {
-      fs.mkdirSync(uploadDir, { recursive: true });
+    // Safe file storage (with fallback for Vercel Serverless EROFS)
+    let uploadDir = path.resolve(process.cwd(), 'public', 'uploads');
+    try {
+      if (!fs.existsSync(uploadDir)) {
+        fs.mkdirSync(uploadDir, { recursive: true });
+      }
+      const testFile = path.join(uploadDir, `.test_${Date.now()}`);
+      fs.writeFileSync(testFile, 'ok');
+      fs.unlinkSync(testFile);
+    } catch {
+      uploadDir = path.join(require('os').tmpdir(), 'navodaya_uploads');
+      if (!fs.existsSync(uploadDir)) {
+        fs.mkdirSync(uploadDir, { recursive: true });
+      }
     }
 
     const filePath = path.join(uploadDir, sanitizedName);

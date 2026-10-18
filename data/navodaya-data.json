@@ -101,9 +101,179 @@
       "description": "Word meanings"
     }
   ],
-  "papers": [],
-  "questions": [],
-  "options": [],
+  "papers": [
+    {
+      "id": "paper-1792342167787",
+      "title": "मराठी नवोदय सराव परीक्षा २०२६ (PDF Auto-Generated)",
+      "description": "Extracted with automated diagram cropping & Devanagari text preservation",
+      "pdf_path": "/uploads/sample.pdf",
+      "duration_minutes": 120,
+      "total_marks": 1.25,
+      "negative_marking_per_question": 0,
+      "is_published": true,
+      "available_from": null,
+      "available_until": null,
+      "created_at": "2026-10-18T16:49:27.787Z",
+      "updated_at": "2026-10-18T16:49:27.788Z",
+      "question_count": 0,
+      "attempts_count": 0
+    },
+    {
+      "id": "paper-1792342166869",
+      "title": "E2E Attempt Flow Paper",
+      "description": "Self-contained test paper",
+      "duration_minutes": 60,
+      "total_marks": 2.5,
+      "negative_marking_per_question": 0,
+      "is_published": true,
+      "available_from": null,
+      "available_until": null,
+      "created_at": "2026-10-18T16:49:26.869Z",
+      "updated_at": "2026-10-18T16:49:26.869Z",
+      "question_count": 0,
+      "attempts_count": 0
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-1792342166936-i6vry",
+      "paper_id": "paper-1792342166869",
+      "question_number": 1,
+      "question_text": "What is 5 + 7?",
+      "marks": 2.5,
+      "explanation": "",
+      "options": [
+        {
+          "id": "opt-1792342166936-A-ysg",
+          "question_id": "q-1792342166936-i6vry",
+          "option_label": "A",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "id": "opt-1792342166936-B-wer",
+          "question_id": "q-1792342166936-i6vry",
+          "option_label": "B",
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "id": "opt-1792342166936-C-3nv",
+          "question_id": "q-1792342166936-i6vry",
+          "option_label": "C",
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "id": "opt-1792342166936-D-q2j",
+          "question_id": "q-1792342166936-i6vry",
+          "option_label": "D",
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
+      "created_at": "2026-10-18T16:49:26.936Z"
+    },
+    {
+      "id": "q-1792342167837-nqpvf",
+      "paper_id": "paper-1792342167787",
+      "subject_id": "11111111-1111-1111-1111-111111111111",
+      "question_number": 1,
+      "question_text": "खालील प्रश्नात डाव्या बाजूला प्रश्न आकृती दिलेली आहे. उत्तर आकृत्यांमधून तंतोतंत जुळणारी आकृती निवडा.",
+      "question_image_url": "/uploads/extracted_images/sample_diagram.png",
+      "marks": 1.25,
+      "explanation": "पर्याय (B) मधील आकृती प्रश्न आकृतीशी तंतोतंत जुळते.",
+      "options": [
+        {
+          "id": "opt-1792342167837-A-gnm",
+          "question_id": "q-1792342167837-nqpvf",
+          "option_label": "A",
+          "option_text": "आकृती A",
+          "is_correct": false
+        },
+        {
+          "id": "opt-1792342167837-B-af8",
+          "question_id": "q-1792342167837-nqpvf",
+          "option_label": "B",
+          "option_text": "आकृती B (तंतोतंत जुळणारी)",
+          "is_correct": true
+        },
+        {
+          "id": "opt-1792342167837-C-xa5",
+          "question_id": "q-1792342167837-nqpvf",
+          "option_label": "C",
+          "option_text": "आकृती C",
+          "is_correct": false
+        },
+        {
+          "id": "opt-1792342167837-D-nkw",
+          "question_id": "q-1792342167837-nqpvf",
+          "option_label": "D",
+          "option_text": "आकृती D",
+          "is_correct": false
+        }
+      ],
+      "created_at": "2026-10-18T16:49:27.837Z"
+    }
+  ],
+  "options": [
+    {
+      "id": "opt-1792342166936-A-ysg",
+      "question_id": "q-1792342166936-i6vry",
+      "option_label": "A",
+      "option_text": "10",
+      "is_correct": false
+    },
+    {
+      "id": "opt-1792342166936-B-wer",
+      "question_id": "q-1792342166936-i6vry",
+      "option_label": "B",
+      "option_text": "12",
+      "is_correct": true
+    },
+    {
+      "id": "opt-1792342166936-C-3nv",
+      "question_id": "q-1792342166936-i6vry",
+      "option_label": "C",
+      "option_text": "14",
+      "is_correct": false
+    },
+    {
+      "id": "opt-1792342166936-D-q2j",
+      "question_id": "q-1792342166936-i6vry",
+      "option_label": "D",
+      "option_text": "15",
+      "is_correct": false
+    },
+    {
+      "id": "opt-1792342167837-A-gnm",
+      "question_id": "q-1792342167837-nqpvf",
+      "option_label": "A",
+      "option_text": "आकृती A",
+      "is_correct": false
+    },
+    {
+      "id": "opt-1792342167837-B-af8",
+      "question_id": "q-1792342167837-nqpvf",
+      "option_label": "B",
+      "option_text": "आकृती B (तंतोतंत जुळणारी)",
+      "is_correct": true
+    },
+    {
+      "id": "opt-1792342167837-C-xa5",
+      "question_id": "q-1792342167837-nqpvf",
+      "option_label": "C",
+      "option_text": "आकृती C",
+      "is_correct": false
+    },
+    {
+      "id": "opt-1792342167837-D-nkw",
+      "question_id": "q-1792342167837-nqpvf",
+      "option_label": "D",
+      "option_text": "आकृती D",
+      "is_correct": false
+    }
+  ],
   "attempts": [
     {
       "id": "att-1792311381957-ft88",
@@ -10680,6 +10850,66 @@
       "accuracy_percentage": 0,
       "paper_snapshot": null,
       "created_at": "2026-10-18T14:54:09.161Z"
+    },
+    {
+      "id": "att-1792342167006-mvd9",
+      "paper_id": "paper-1792342166869",
+      "student_id": "test-student-unit",
+      "started_at": "2026-10-18T16:49:27.006Z",
+      "submitted_at": "2026-10-18T16:49:27.102Z",
+      "time_spent_seconds": 1,
+      "status": "submitted",
+      "total_score": 2.5,
+      "max_marks": 2.5,
+      "percentage": 100,
+      "total_questions": 1,
+      "correct_count": 1,
+      "wrong_count": 0,
+      "unanswered_count": 0,
+      "accuracy_percentage": 100,
+      "paper_snapshot": {
+        "paper_id": "paper-1792342166869",
+        "paper_title": "E2E Attempt Flow Paper",
+        "duration_minutes": 60,
+        "total_marks": 2.5,
+        "negative_marking_per_question": 0,
+        "questions": [
+          {
+            "id": "q-1792342166936-i6vry",
+            "question_number": 1,
+            "question_text": "What is 5 + 7?",
+            "marks": 2.5,
+            "explanation": "",
+            "options": [
+              {
+                "id": "opt-1792342166936-A-ysg",
+                "option_label": "A",
+                "option_text": "10",
+                "is_correct": false
+              },
+              {
+                "id": "opt-1792342166936-B-wer",
+                "option_label": "B",
+                "option_text": "12",
+                "is_correct": true
+              },
+              {
+                "id": "opt-1792342166936-C-3nv",
+                "option_label": "C",
+                "option_text": "14",
+                "is_correct": false
+              },
+              {
+                "id": "opt-1792342166936-D-q2j",
+                "option_label": "D",
+                "option_text": "15",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "created_at": "2026-10-18T16:49:27.006Z"
     }
   ],
   "answers": [
@@ -14078,6 +14308,18 @@
       "marks_obtained": 0,
       "time_spent_seconds": 0,
       "saved_at": "2026-10-18T14:53:13.015Z"
+    },
+    {
+      "id": "ans-1792342167055-zoq6",
+      "attempt_id": "att-1792342167006-mvd9",
+      "question_id": "q-1792342166936-i6vry",
+      "selected_option_id": "opt-1792342166936-B-wer",
+      "selected_option_label": "B",
+      "is_marked_for_review": false,
+      "is_correct": true,
+      "marks_obtained": 2.5,
+      "time_spent_seconds": 15,
+      "saved_at": "2026-10-18T16:49:27.102Z"
     }
   ],
   "sessions": [

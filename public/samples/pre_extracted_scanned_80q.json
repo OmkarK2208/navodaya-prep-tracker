@@ -1,0 +1,119 @@
+{
+  "success": true,
+  "total_pages": 1,
+  "is_scanned": true,
+  "questions": [
+    {
+      "question_number": 1,
+      "subject_code": "MAT",
+      "subject_name": "Mental Ability Test",
+      "question_text": "Question 1 (Scanned Image - Refer to figure above)",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "Option A"
+        },
+        {
+          "option_label": "B",
+          "option_text": "Option B"
+        },
+        {
+          "option_label": "C",
+          "option_text": "Option C"
+        },
+        {
+          "option_label": "D",
+          "option_text": "Option D"
+        }
+      ],
+      "question_image_url": "/uploads/extracted_images/crop_dyn_q1_1792341736.png",
+      "marks": 1.25,
+      "is_uncertain": true,
+      "uncertainty_reason": "Scanned document without digital text layer"
+    },
+    {
+      "question_number": 2,
+      "subject_code": "MAT",
+      "subject_name": "Mental Ability Test",
+      "question_text": "Question 2 (Scanned Image - Refer to figure above)",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "Option A"
+        },
+        {
+          "option_label": "B",
+          "option_text": "Option B"
+        },
+        {
+          "option_label": "C",
+          "option_text": "Option C"
+        },
+        {
+          "option_label": "D",
+          "option_text": "Option D"
+        }
+      ],
+      "question_image_url": "/uploads/extracted_images/crop_dyn_q2_1792341736.png",
+      "marks": 1.25,
+      "is_uncertain": true,
+      "uncertainty_reason": "Scanned document without digital text layer"
+    },
+    {
+      "question_number": 3,
+      "subject_code": "MAT",
+      "subject_name": "Mental Ability Test",
+      "question_text": "Question 3 (Scanned Image - Refer to figure above)",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "Option A"
+        },
+        {
+          "option_label": "B",
+          "option_text": "Option B"
+        },
+        {
+          "option_label": "C",
+          "option_text": "Option C"
+        },
+        {
+          "option_label": "D",
+          "option_text": "Option D"
+        }
+      ],
+      "question_image_url": "/uploads/extracted_images/crop_dyn_q3_1792341736.png",
+      "marks": 1.25,
+      "is_uncertain": true,
+      "uncertainty_reason": "Scanned document without digital text layer"
+    },
+    {
+      "question_number": 4,
+      "subject_code": "MAT",
+      "subject_name": "Mental Ability Test",
+      "question_text": "Question 4 (Scanned Image - Refer to figure above)",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "Option A"
+        },
+        {
+          "option_label": "B",
+          "option_text": "Option B"
+        },
+        {
+          "option_label": "C",
+          "option_text": "Option C"
+        },
+        {
+          "option_label": "D",
+          "option_text": "Option D"
+        }
+      ],
+      "question_image_url": "/uploads/extracted_images/crop_dyn_q4_1792341736.png",
+      "marks": 1.25,
+      "is_uncertain": true,
+      "uncertainty_reason": "Scanned document without digital text layer"
+    }
+  ]
+}

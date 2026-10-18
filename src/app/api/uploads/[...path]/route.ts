@@ -25,15 +25,20 @@ export async function GET(req: Request, props: Props) {
 
     const uploadsDir = path.resolve(process.cwd(), 'public', 'uploads');
     const safeSubPath = path.join(...pathSegments);
-    const resolvedPath = path.resolve(uploadsDir, safeSubPath);
-
-    // Security check: ensure path does not escape uploads directory
-    if (!resolvedPath.startsWith(uploadsDir)) {
-      return NextResponse.json({ error: 'Access denied' }, { status: 403 });
-    }
+    let resolvedPath = path.resolve(uploadsDir, safeSubPath);
 
     if (!fs.existsSync(resolvedPath)) {
-      return NextResponse.json({ error: 'File not found on disk', path: safeSubPath }, { status: 404 });
+      const tmpPath = path.resolve(require('os').tmpdir(), 'navodaya_uploads', safeSubPath);
+      if (fs.existsSync(tmpPath)) {
+        resolvedPath = tmpPath;
+      } else {
+        const samplePath = path.resolve(process.cwd(), 'public', 'samples', safeSubPath);
+        if (fs.existsSync(samplePath)) {
+          resolvedPath = samplePath;
+        } else {
+          return NextResponse.json({ error: 'File not found on disk', path: safeSubPath }, { status: 404 });
+        }
+      }
     }
 
     const stat = fs.statSync(resolvedPath);

@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 import {
   IDataRepository,
   CreatePaperInput,
@@ -34,7 +35,28 @@ interface DatabaseSchema {
   revisionItems: RevisionItem[];
 }
 
-const DB_PATH = path.resolve(process.cwd(), 'data', 'navodaya-data.json');
+function getDbPath(): string {
+  const localPath = path.resolve(process.cwd(), 'data', 'navodaya-data.json');
+  try {
+    const dir = path.dirname(localPath);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    const testFile = path.join(dir, `.test_${Date.now()}`);
+    fs.writeFileSync(testFile, 'ok');
+    fs.unlinkSync(testFile);
+    return localPath;
+  } catch {
+    // Read-only filesystem on Vercel Serverless (/var/task)
+    const tmpDir = path.join(os.tmpdir(), 'navodaya_data');
+    if (!fs.existsSync(tmpDir)) fs.mkdirSync(tmpDir, { recursive: true });
+    const tmpDbPath = path.join(tmpDir, 'navodaya-data.json');
+    if (!fs.existsSync(tmpDbPath) && fs.existsSync(localPath)) {
+      try {
+        fs.copyFileSync(localPath, tmpDbPath);
+      } catch {}
+    }
+    return tmpDbPath;
+  }
+}
 
 function getInitialData(): DatabaseSchema {
   const adminId = 'admin-00000000-0000-0000-0000-000000000001';
@@ -277,14 +299,47 @@ function getInitialData(): DatabaseSchema {
     },
   ];
 
-  const defaultOptions: QuestionOption[] = sampleQuestions.flatMap((q) => q.options);
+  let allQuestions = sampleQuestions;
+  const fixturePath = path.resolve(process.cwd(), 'public', 'samples', 'pre_extracted_navodaya_80q.json');
+  if (fs.existsSync(fixturePath)) {
+    try {
+      const fixtureData = JSON.parse(fs.readFileSync(fixturePath, 'utf8'));
+      if (fixtureData.questions && fixtureData.questions.length > 0) {
+        allQuestions = fixtureData.questions.map((q: any) => {
+          const sId = q.subject_code === 'MAT' ? matId : q.subject_code === 'MATH' ? mathId : langId;
+          const qId = `q-navodaya-${q.question_number}`;
+          return {
+            id: qId,
+            paper_id: starterPaperId,
+            subject_id: sId,
+            question_number: q.question_number,
+            question_text: q.question_text,
+            question_image_url: q.question_image_url,
+            marks: q.marks || 1.25,
+            instructions: q.instructions || null,
+            explanation: q.explanation || null,
+            options: q.options.map((opt: any) => ({
+              id: `opt-${q.question_number}-${opt.option_label.toLowerCase()}`,
+              question_id: qId,
+              option_label: opt.option_label,
+              option_text: opt.option_text,
+              is_correct: !!opt.is_correct,
+            })),
+          };
+        });
+        starterPaper.title = 'मराठी नवोदय सराव परीक्षा २०२६ (संपूर्ण ८० प्रश्न - Mental Ability, Arithmetic, Language)';
+      }
+    } catch {}
+  }
+
+  const defaultOptions: QuestionOption[] = allQuestions.flatMap((q) => q.options);
 
   return {
     profiles: defaultProfiles,
     subjects: defaultSubjects,
     topics: defaultTopics,
     papers: [starterPaper],
-    questions: sampleQuestions,
+    questions: allQuestions,
     options: defaultOptions,
     attempts: [],
     answers: [],
@@ -295,33 +350,39 @@ function getInitialData(): DatabaseSchema {
 
 export class LocalPersistentRepository implements IDataRepository {
   private ensureFile(): DatabaseSchema {
-    const dir = path.dirname(DB_PATH);
+    const dbPath = getDbPath();
+    const dir = path.dirname(dbPath);
     if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
+      try { fs.mkdirSync(dir, { recursive: true }); } catch {}
     }
 
-    if (!fs.existsSync(DB_PATH)) {
+    if (!fs.existsSync(dbPath)) {
       const initial = getInitialData();
-      fs.writeFileSync(DB_PATH, JSON.stringify(initial, null, 2), 'utf-8');
+      try { fs.writeFileSync(dbPath, JSON.stringify(initial, null, 2), 'utf-8'); } catch {}
       return initial;
     }
 
     try {
-      const content = fs.readFileSync(DB_PATH, 'utf-8');
+      const content = fs.readFileSync(dbPath, 'utf-8');
       return JSON.parse(content);
     } catch {
       const initial = getInitialData();
-      fs.writeFileSync(DB_PATH, JSON.stringify(initial, null, 2), 'utf-8');
+      try { fs.writeFileSync(dbPath, JSON.stringify(initial, null, 2), 'utf-8'); } catch {}
       return initial;
     }
   }
 
   private saveFile(data: DatabaseSchema): void {
-    const dir = path.dirname(DB_PATH);
+    const dbPath = getDbPath();
+    const dir = path.dirname(dbPath);
     if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
+      try { fs.mkdirSync(dir, { recursive: true }); } catch {}
     }
-    fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2), 'utf-8');
+    try {
+      fs.writeFileSync(dbPath, JSON.stringify(data, null, 2), 'utf-8');
+    } catch (e) {
+      console.warn('Could not save database file:', e);
+    }
   }
 
   async getProfile(userId: string): Promise<Profile | null> {
