@@ -1,0 +1,3072 @@
+{
+  "profiles": [
+    {
+      "id": "admin-00000000-0000-0000-0000-000000000001",
+      "email": "admin@navodaya.local",
+      "full_name": "Mentor / Admin",
+      "role": "admin",
+      "created_at": "2026-10-18T08:16:21.774Z"
+    },
+    {
+      "id": "student-00000000-0000-0000-0000-000000000002",
+      "email": "sister@navodaya.local",
+      "full_name": "Ananya Sharma",
+      "role": "student",
+      "target_exam_year": 2026,
+      "created_at": "2026-10-18T08:16:21.776Z"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "11111111-1111-1111-1111-111111111111",
+      "name": "Mental Ability Test",
+      "code": "MAT",
+      "description": "Section 1: Non-verbal reasoning, pattern matching, and spatial orientation",
+      "display_order": 1
+    },
+    {
+      "id": "22222222-2222-2222-2222-222222222222",
+      "name": "Arithmetic Test",
+      "code": "MATH",
+      "description": "Section 2: Fundamental operations, fractions, LCM/HCF, speed, and area",
+      "display_order": 2
+    },
+    {
+      "id": "33333333-3333-3333-3333-333333333333",
+      "name": "Language Test",
+      "code": "LANG",
+      "description": "Section 3: Comprehension passages, vocabulary, and contextual grammar",
+      "display_order": 3
+    }
+  ],
+  "topics": [
+    {
+      "id": "top-1",
+      "subject_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Odd Man Out",
+      "description": "Finding the different figure"
+    },
+    {
+      "id": "top-2",
+      "subject_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Pattern Completion",
+      "description": "Completing the missing square"
+    },
+    {
+      "id": "top-3",
+      "subject_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Figure Series Completion",
+      "description": "Finding next in series"
+    },
+    {
+      "id": "top-4",
+      "subject_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Analogy",
+      "description": "Relational logic"
+    },
+    {
+      "id": "top-5",
+      "subject_id": "22222222-2222-2222-2222-222222222222",
+      "name": "Number & Numeric System",
+      "description": "Place values and primes"
+    },
+    {
+      "id": "top-6",
+      "subject_id": "22222222-2222-2222-2222-222222222222",
+      "name": "LCM and HCF",
+      "description": "Factors and multiples"
+    },
+    {
+      "id": "top-7",
+      "subject_id": "22222222-2222-2222-2222-222222222222",
+      "name": "Fractions & Decimals",
+      "description": "Fractional math"
+    },
+    {
+      "id": "top-8",
+      "subject_id": "22222222-2222-2222-2222-222222222222",
+      "name": "Distance, Time and Speed",
+      "description": "Travel and speed problems"
+    },
+    {
+      "id": "top-9",
+      "subject_id": "33333333-3333-3333-3333-333333333333",
+      "name": "Reading Comprehension",
+      "description": "Passage questions"
+    },
+    {
+      "id": "top-10",
+      "subject_id": "33333333-3333-3333-3333-333333333333",
+      "name": "Vocabulary & Antonyms",
+      "description": "Word meanings"
+    }
+  ],
+  "papers": [
+    {
+      "id": "paper-day-01",
+      "title": "Navodaya Model Paper 01 (Daily Practice)",
+      "description": "A curated 10-question daily challenge covering Mental Ability, Arithmetic, and Language to test readiness and build confidence.",
+      "duration_minutes": 30,
+      "total_marks": 12.5,
+      "negative_marking_per_question": 0,
+      "is_published": true,
+      "available_from": "2026-10-17T08:16:21.776Z",
+      "available_until": "2026-11-17T08:16:21.776Z",
+      "created_by": "admin-00000000-0000-0000-0000-000000000001",
+      "created_at": "2026-10-18T08:16:21.776Z",
+      "updated_at": "2026-10-18T08:16:21.776Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-mat-1",
+      "paper_id": "paper-day-01",
+      "subject_id": "11111111-1111-1111-1111-111111111111",
+      "topic_id": "top-1",
+      "question_number": 1,
+      "question_text": "Four figures are given. Three are alike in some way and one is different. Choose the odd one out:",
+      "marks": 1.25,
+      "explanation": "Options A, B, and C are closed geometrical polygons formed by straight lines (Triangle, Square, Pentagon), whereas Option D is a Circle formed by a continuous curved line with no vertices.",
+      "options": [
+        {
+          "id": "opt-q1-a",
+          "question_id": "q-mat-1",
+          "option_label": "A",
+          "option_text": "Triangle (3 sides)",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q1-b",
+          "question_id": "q-mat-1",
+          "option_label": "B",
+          "option_text": "Square (4 sides)",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q1-c",
+          "question_id": "q-mat-1",
+          "option_label": "C",
+          "option_text": "Pentagon (5 sides)",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q1-d",
+          "question_id": "q-mat-1",
+          "option_label": "D",
+          "option_text": "Circle (Curved boundary)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "q-mat-2",
+      "paper_id": "paper-day-01",
+      "subject_id": "11111111-1111-1111-1111-111111111111",
+      "topic_id": "top-4",
+      "question_number": 2,
+      "question_text": "Analogy: If Circle is to Sphere, then Square is to:",
+      "marks": 1.25,
+      "explanation": "A circle is a 2D geometric shape whose 3D counterpart is a sphere. Similarly, a square is a 2D shape whose 3D counterpart is a cube.",
+      "options": [
+        {
+          "id": "opt-q2-a",
+          "question_id": "q-mat-2",
+          "option_label": "A",
+          "option_text": "Cube",
+          "is_correct": true
+        },
+        {
+          "id": "opt-q2-b",
+          "question_id": "q-mat-2",
+          "option_label": "B",
+          "option_text": "Rectangle",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q2-c",
+          "question_id": "q-mat-2",
+          "option_label": "C",
+          "option_text": "Cone",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q2-d",
+          "question_id": "q-mat-2",
+          "option_label": "D",
+          "option_text": "Cylinder",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "q-mat-3",
+      "paper_id": "paper-day-01",
+      "subject_id": "11111111-1111-1111-1111-111111111111",
+      "topic_id": "top-2",
+      "question_number": 3,
+      "question_text": "Pattern Completion: A clock hand points to 12, then to 3, then to 6. Where will it point next?",
+      "marks": 1.25,
+      "explanation": "The hand rotates 90 degrees clockwise in each step: 12 -> 3 -> 6. Rotating another 90 degrees clockwise points directly to 9.",
+      "options": [
+        {
+          "id": "opt-q3-a",
+          "question_id": "q-mat-3",
+          "option_label": "A",
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q3-b",
+          "question_id": "q-mat-3",
+          "option_label": "B",
+          "option_text": "9",
+          "is_correct": true
+        },
+        {
+          "id": "opt-q3-c",
+          "question_id": "q-mat-3",
+          "option_label": "C",
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q3-d",
+          "question_id": "q-mat-3",
+          "option_label": "D",
+          "option_text": "1",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "q-math-1",
+      "paper_id": "paper-day-01",
+      "subject_id": "22222222-2222-2222-2222-222222222222",
+      "topic_id": "top-5",
+      "question_number": 4,
+      "question_text": "What is the difference between the place value and face value of 7 in the number 27,845?",
+      "marks": 1.25,
+      "explanation": "In 27,845, the digit 7 is at the thousands place, so its place value = 7,000. Its face value is 7. Difference = 7,000 - 7 = 6,993.",
+      "options": [
+        {
+          "id": "opt-q4-a",
+          "question_id": "q-math-1",
+          "option_label": "A",
+          "option_text": "7,000",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q4-b",
+          "question_id": "q-math-1",
+          "option_label": "B",
+          "option_text": "6,993",
+          "is_correct": true
+        },
+        {
+          "id": "opt-q4-c",
+          "question_id": "q-math-1",
+          "option_label": "C",
+          "option_text": "6,990",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q4-d",
+          "question_id": "q-math-1",
+          "option_label": "D",
+          "option_text": "0",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "q-math-2",
+      "paper_id": "paper-day-01",
+      "subject_id": "22222222-2222-2222-2222-222222222222",
+      "topic_id": "top-6",
+      "question_number": 5,
+      "question_text": "The HCF of two numbers is 16 and their product is 3072. What is their LCM?",
+      "marks": 1.25,
+      "explanation": "We know that Product of two numbers = HCF × LCM. Therefore, LCM = Product / HCF = 3072 / 16 = 192.",
+      "options": [
+        {
+          "id": "opt-q5-a",
+          "question_id": "q-math-2",
+          "option_label": "A",
+          "option_text": "182",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q5-b",
+          "question_id": "q-math-2",
+          "option_label": "B",
+          "option_text": "192",
+          "is_correct": true
+        },
+        {
+          "id": "opt-q5-c",
+          "question_id": "q-math-2",
+          "option_label": "C",
+          "option_text": "202",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q5-d",
+          "question_id": "q-math-2",
+          "option_label": "D",
+          "option_text": "212",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "q-math-3",
+      "paper_id": "paper-day-01",
+      "subject_id": "22222222-2222-2222-2222-222222222222",
+      "topic_id": "top-7",
+      "question_number": 6,
+      "question_text": "Simplify: 3/4 + 1/2 - 1/8 = ?",
+      "marks": 1.25,
+      "explanation": "Find common denominator 8: 3/4 = 6/8, 1/2 = 4/8. So (6/8 + 4/8) - 1/8 = 10/8 - 1/8 = 9/8 = 1 1/8.",
+      "options": [
+        {
+          "id": "opt-q6-a",
+          "question_id": "q-math-3",
+          "option_label": "A",
+          "option_text": "7/8",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q6-b",
+          "question_id": "q-math-3",
+          "option_label": "B",
+          "option_text": "9/8",
+          "is_correct": true
+        },
+        {
+          "id": "opt-q6-c",
+          "question_id": "q-math-3",
+          "option_label": "C",
+          "option_text": "5/8",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q6-d",
+          "question_id": "q-math-3",
+          "option_label": "D",
+          "option_text": "11/8",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "q-math-4",
+      "paper_id": "paper-day-01",
+      "subject_id": "22222222-2222-2222-2222-222222222222",
+      "topic_id": "top-8",
+      "question_number": 7,
+      "question_text": "A bus leaves Delhi at 9:15 AM and reaches Chandigarh at 3:45 PM on the same day. What was the total travel duration?",
+      "marks": 1.25,
+      "explanation": "From 9:15 AM to 12:00 Noon is 2 hours 45 minutes. From 12:00 Noon to 3:45 PM is 3 hours 45 minutes. Total = 2h 45m + 3h 45m = 5h 90m = 6 hours 30 minutes.",
+      "options": [
+        {
+          "id": "opt-q7-a",
+          "question_id": "q-math-4",
+          "option_label": "A",
+          "option_text": "6 hours 15 minutes",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q7-b",
+          "question_id": "q-math-4",
+          "option_label": "B",
+          "option_text": "6 hours 30 minutes",
+          "is_correct": true
+        },
+        {
+          "id": "opt-q7-c",
+          "question_id": "q-math-4",
+          "option_label": "C",
+          "option_text": "7 hours 00 minutes",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q7-d",
+          "question_id": "q-math-4",
+          "option_label": "D",
+          "option_text": "5 hours 45 minutes",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "q-lang-1",
+      "paper_id": "paper-day-01",
+      "subject_id": "33333333-3333-3333-3333-333333333333",
+      "topic_id": "top-9",
+      "question_number": 8,
+      "question_text": "Read: \"A tiny bird built her nest on the topmost branch of an oak tree to keep her eggs safe from prowling foxes.\" Why did the bird build the nest on the topmost branch?",
+      "marks": 1.25,
+      "explanation": "The passage explicitly states she chose the topmost branch \"to keep her eggs safe from prowling foxes\".",
+      "options": [
+        {
+          "id": "opt-q8-a",
+          "question_id": "q-lang-1",
+          "option_label": "A",
+          "option_text": "To get more morning sunlight",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q8-b",
+          "question_id": "q-lang-1",
+          "option_label": "B",
+          "option_text": "To protect eggs from foxes",
+          "is_correct": true
+        },
+        {
+          "id": "opt-q8-c",
+          "question_id": "q-lang-1",
+          "option_label": "C",
+          "option_text": "To sing loudly for others",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q8-d",
+          "question_id": "q-lang-1",
+          "option_label": "D",
+          "option_text": "Because leaves were thicker",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "q-lang-2",
+      "paper_id": "paper-day-01",
+      "subject_id": "33333333-3333-3333-3333-333333333333",
+      "topic_id": "top-10",
+      "question_number": 9,
+      "question_text": "Select the correct opposite (antonym) of the word \"Courageous\":",
+      "marks": 1.25,
+      "explanation": "\"Courageous\" means brave and fearless. Its exact opposite is \"Cowardly\" or timid.",
+      "options": [
+        {
+          "id": "opt-q9-a",
+          "question_id": "q-lang-2",
+          "option_label": "A",
+          "option_text": "Brave",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q9-b",
+          "question_id": "q-lang-2",
+          "option_label": "B",
+          "option_text": "Cowardly",
+          "is_correct": true
+        },
+        {
+          "id": "opt-q9-c",
+          "question_id": "q-lang-2",
+          "option_label": "C",
+          "option_text": "Honest",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q9-d",
+          "question_id": "q-lang-2",
+          "option_label": "D",
+          "option_text": "Strong",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "q-lang-3",
+      "paper_id": "paper-day-01",
+      "subject_id": "33333333-3333-3333-3333-333333333333",
+      "topic_id": "top-10",
+      "question_number": 10,
+      "question_text": "Choose the word that correctly fills the blank: \"Rohan has been waiting for the school bus _____ 7:00 AM.\"",
+      "marks": 1.25,
+      "explanation": "We use \"since\" to denote a specific starting point in time (7:00 AM) with the present perfect continuous tense.",
+      "options": [
+        {
+          "id": "opt-q10-a",
+          "question_id": "q-lang-3",
+          "option_label": "A",
+          "option_text": "for",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q10-b",
+          "question_id": "q-lang-3",
+          "option_label": "B",
+          "option_text": "since",
+          "is_correct": true
+        },
+        {
+          "id": "opt-q10-c",
+          "question_id": "q-lang-3",
+          "option_label": "C",
+          "option_text": "from",
+          "is_correct": false
+        },
+        {
+          "id": "opt-q10-d",
+          "question_id": "q-lang-3",
+          "option_label": "D",
+          "option_text": "until",
+          "is_correct": false
+        }
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "opt-q1-a",
+      "question_id": "q-mat-1",
+      "option_label": "A",
+      "option_text": "Triangle (3 sides)",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q1-b",
+      "question_id": "q-mat-1",
+      "option_label": "B",
+      "option_text": "Square (4 sides)",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q1-c",
+      "question_id": "q-mat-1",
+      "option_label": "C",
+      "option_text": "Pentagon (5 sides)",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q1-d",
+      "question_id": "q-mat-1",
+      "option_label": "D",
+      "option_text": "Circle (Curved boundary)",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q2-a",
+      "question_id": "q-mat-2",
+      "option_label": "A",
+      "option_text": "Cube",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q2-b",
+      "question_id": "q-mat-2",
+      "option_label": "B",
+      "option_text": "Rectangle",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q2-c",
+      "question_id": "q-mat-2",
+      "option_label": "C",
+      "option_text": "Cone",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q2-d",
+      "question_id": "q-mat-2",
+      "option_label": "D",
+      "option_text": "Cylinder",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q3-a",
+      "question_id": "q-mat-3",
+      "option_label": "A",
+      "option_text": "8",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q3-b",
+      "question_id": "q-mat-3",
+      "option_label": "B",
+      "option_text": "9",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q3-c",
+      "question_id": "q-mat-3",
+      "option_label": "C",
+      "option_text": "10",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q3-d",
+      "question_id": "q-mat-3",
+      "option_label": "D",
+      "option_text": "1",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q4-a",
+      "question_id": "q-math-1",
+      "option_label": "A",
+      "option_text": "7,000",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q4-b",
+      "question_id": "q-math-1",
+      "option_label": "B",
+      "option_text": "6,993",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q4-c",
+      "question_id": "q-math-1",
+      "option_label": "C",
+      "option_text": "6,990",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q4-d",
+      "question_id": "q-math-1",
+      "option_label": "D",
+      "option_text": "0",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q5-a",
+      "question_id": "q-math-2",
+      "option_label": "A",
+      "option_text": "182",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q5-b",
+      "question_id": "q-math-2",
+      "option_label": "B",
+      "option_text": "192",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q5-c",
+      "question_id": "q-math-2",
+      "option_label": "C",
+      "option_text": "202",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q5-d",
+      "question_id": "q-math-2",
+      "option_label": "D",
+      "option_text": "212",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q6-a",
+      "question_id": "q-math-3",
+      "option_label": "A",
+      "option_text": "7/8",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q6-b",
+      "question_id": "q-math-3",
+      "option_label": "B",
+      "option_text": "9/8",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q6-c",
+      "question_id": "q-math-3",
+      "option_label": "C",
+      "option_text": "5/8",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q6-d",
+      "question_id": "q-math-3",
+      "option_label": "D",
+      "option_text": "11/8",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q7-a",
+      "question_id": "q-math-4",
+      "option_label": "A",
+      "option_text": "6 hours 15 minutes",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q7-b",
+      "question_id": "q-math-4",
+      "option_label": "B",
+      "option_text": "6 hours 30 minutes",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q7-c",
+      "question_id": "q-math-4",
+      "option_label": "C",
+      "option_text": "7 hours 00 minutes",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q7-d",
+      "question_id": "q-math-4",
+      "option_label": "D",
+      "option_text": "5 hours 45 minutes",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q8-a",
+      "question_id": "q-lang-1",
+      "option_label": "A",
+      "option_text": "To get more morning sunlight",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q8-b",
+      "question_id": "q-lang-1",
+      "option_label": "B",
+      "option_text": "To protect eggs from foxes",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q8-c",
+      "question_id": "q-lang-1",
+      "option_label": "C",
+      "option_text": "To sing loudly for others",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q8-d",
+      "question_id": "q-lang-1",
+      "option_label": "D",
+      "option_text": "Because leaves were thicker",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q9-a",
+      "question_id": "q-lang-2",
+      "option_label": "A",
+      "option_text": "Brave",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q9-b",
+      "question_id": "q-lang-2",
+      "option_label": "B",
+      "option_text": "Cowardly",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q9-c",
+      "question_id": "q-lang-2",
+      "option_label": "C",
+      "option_text": "Honest",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q9-d",
+      "question_id": "q-lang-2",
+      "option_label": "D",
+      "option_text": "Strong",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q10-a",
+      "question_id": "q-lang-3",
+      "option_label": "A",
+      "option_text": "for",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q10-b",
+      "question_id": "q-lang-3",
+      "option_label": "B",
+      "option_text": "since",
+      "is_correct": true
+    },
+    {
+      "id": "opt-q10-c",
+      "question_id": "q-lang-3",
+      "option_label": "C",
+      "option_text": "from",
+      "is_correct": false
+    },
+    {
+      "id": "opt-q10-d",
+      "question_id": "q-lang-3",
+      "option_label": "D",
+      "option_text": "until",
+      "is_correct": false
+    }
+  ],
+  "attempts": [
+    {
+      "id": "att-1792311381957-ft88",
+      "paper_id": "paper-day-01",
+      "student_id": "test-student-unit",
+      "started_at": "2026-10-18T08:16:21.957Z",
+      "submitted_at": "2026-10-18T08:16:22.052Z",
+      "time_spent_seconds": 1,
+      "status": "submitted",
+      "total_score": 1.25,
+      "max_marks": 12.5,
+      "percentage": 10,
+      "total_questions": 10,
+      "correct_count": 1,
+      "wrong_count": 0,
+      "unanswered_count": 9,
+      "accuracy_percentage": 100,
+      "paper_snapshot": {
+        "paper_id": "paper-day-01",
+        "paper_title": "Navodaya Model Paper 01 (Daily Practice)",
+        "duration_minutes": 30,
+        "total_marks": 12.5,
+        "negative_marking_per_question": 0,
+        "questions": [
+          {
+            "id": "q-mat-1",
+            "question_number": 1,
+            "question_text": "Four figures are given. Three are alike in some way and one is different. Choose the odd one out:",
+            "marks": 1.25,
+            "explanation": "Options A, B, and C are closed geometrical polygons formed by straight lines (Triangle, Square, Pentagon), whereas Option D is a Circle formed by a continuous curved line with no vertices.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-1",
+            "topic_name": "Odd Man Out",
+            "options": [
+              {
+                "id": "opt-q1-a",
+                "option_label": "A",
+                "option_text": "Triangle (3 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-b",
+                "option_label": "B",
+                "option_text": "Square (4 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-c",
+                "option_label": "C",
+                "option_text": "Pentagon (5 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-d",
+                "option_label": "D",
+                "option_text": "Circle (Curved boundary)",
+                "is_correct": true
+              }
+            ]
+          },
+          {
+            "id": "q-mat-2",
+            "question_number": 2,
+            "question_text": "Analogy: If Circle is to Sphere, then Square is to:",
+            "marks": 1.25,
+            "explanation": "A circle is a 2D geometric shape whose 3D counterpart is a sphere. Similarly, a square is a 2D shape whose 3D counterpart is a cube.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-4",
+            "topic_name": "Analogy",
+            "options": [
+              {
+                "id": "opt-q2-a",
+                "option_label": "A",
+                "option_text": "Cube",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q2-b",
+                "option_label": "B",
+                "option_text": "Rectangle",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q2-c",
+                "option_label": "C",
+                "option_text": "Cone",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q2-d",
+                "option_label": "D",
+                "option_text": "Cylinder",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-mat-3",
+            "question_number": 3,
+            "question_text": "Pattern Completion: A clock hand points to 12, then to 3, then to 6. Where will it point next?",
+            "marks": 1.25,
+            "explanation": "The hand rotates 90 degrees clockwise in each step: 12 -> 3 -> 6. Rotating another 90 degrees clockwise points directly to 9.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-2",
+            "topic_name": "Pattern Completion",
+            "options": [
+              {
+                "id": "opt-q3-a",
+                "option_label": "A",
+                "option_text": "8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q3-b",
+                "option_label": "B",
+                "option_text": "9",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q3-c",
+                "option_label": "C",
+                "option_text": "10",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q3-d",
+                "option_label": "D",
+                "option_text": "1",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-1",
+            "question_number": 4,
+            "question_text": "What is the difference between the place value and face value of 7 in the number 27,845?",
+            "marks": 1.25,
+            "explanation": "In 27,845, the digit 7 is at the thousands place, so its place value = 7,000. Its face value is 7. Difference = 7,000 - 7 = 6,993.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-5",
+            "topic_name": "Number & Numeric System",
+            "options": [
+              {
+                "id": "opt-q4-a",
+                "option_label": "A",
+                "option_text": "7,000",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q4-b",
+                "option_label": "B",
+                "option_text": "6,993",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q4-c",
+                "option_label": "C",
+                "option_text": "6,990",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q4-d",
+                "option_label": "D",
+                "option_text": "0",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-2",
+            "question_number": 5,
+            "question_text": "The HCF of two numbers is 16 and their product is 3072. What is their LCM?",
+            "marks": 1.25,
+            "explanation": "We know that Product of two numbers = HCF × LCM. Therefore, LCM = Product / HCF = 3072 / 16 = 192.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-6",
+            "topic_name": "LCM and HCF",
+            "options": [
+              {
+                "id": "opt-q5-a",
+                "option_label": "A",
+                "option_text": "182",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q5-b",
+                "option_label": "B",
+                "option_text": "192",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q5-c",
+                "option_label": "C",
+                "option_text": "202",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q5-d",
+                "option_label": "D",
+                "option_text": "212",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-3",
+            "question_number": 6,
+            "question_text": "Simplify: 3/4 + 1/2 - 1/8 = ?",
+            "marks": 1.25,
+            "explanation": "Find common denominator 8: 3/4 = 6/8, 1/2 = 4/8. So (6/8 + 4/8) - 1/8 = 10/8 - 1/8 = 9/8 = 1 1/8.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-7",
+            "topic_name": "Fractions & Decimals",
+            "options": [
+              {
+                "id": "opt-q6-a",
+                "option_label": "A",
+                "option_text": "7/8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q6-b",
+                "option_label": "B",
+                "option_text": "9/8",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q6-c",
+                "option_label": "C",
+                "option_text": "5/8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q6-d",
+                "option_label": "D",
+                "option_text": "11/8",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-4",
+            "question_number": 7,
+            "question_text": "A bus leaves Delhi at 9:15 AM and reaches Chandigarh at 3:45 PM on the same day. What was the total travel duration?",
+            "marks": 1.25,
+            "explanation": "From 9:15 AM to 12:00 Noon is 2 hours 45 minutes. From 12:00 Noon to 3:45 PM is 3 hours 45 minutes. Total = 2h 45m + 3h 45m = 5h 90m = 6 hours 30 minutes.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-8",
+            "topic_name": "Distance, Time and Speed",
+            "options": [
+              {
+                "id": "opt-q7-a",
+                "option_label": "A",
+                "option_text": "6 hours 15 minutes",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q7-b",
+                "option_label": "B",
+                "option_text": "6 hours 30 minutes",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q7-c",
+                "option_label": "C",
+                "option_text": "7 hours 00 minutes",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q7-d",
+                "option_label": "D",
+                "option_text": "5 hours 45 minutes",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-1",
+            "question_number": 8,
+            "question_text": "Read: \"A tiny bird built her nest on the topmost branch of an oak tree to keep her eggs safe from prowling foxes.\" Why did the bird build the nest on the topmost branch?",
+            "marks": 1.25,
+            "explanation": "The passage explicitly states she chose the topmost branch \"to keep her eggs safe from prowling foxes\".",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-9",
+            "topic_name": "Reading Comprehension",
+            "options": [
+              {
+                "id": "opt-q8-a",
+                "option_label": "A",
+                "option_text": "To get more morning sunlight",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q8-b",
+                "option_label": "B",
+                "option_text": "To protect eggs from foxes",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q8-c",
+                "option_label": "C",
+                "option_text": "To sing loudly for others",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q8-d",
+                "option_label": "D",
+                "option_text": "Because leaves were thicker",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-2",
+            "question_number": 9,
+            "question_text": "Select the correct opposite (antonym) of the word \"Courageous\":",
+            "marks": 1.25,
+            "explanation": "\"Courageous\" means brave and fearless. Its exact opposite is \"Cowardly\" or timid.",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-10",
+            "topic_name": "Vocabulary & Antonyms",
+            "options": [
+              {
+                "id": "opt-q9-a",
+                "option_label": "A",
+                "option_text": "Brave",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q9-b",
+                "option_label": "B",
+                "option_text": "Cowardly",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q9-c",
+                "option_label": "C",
+                "option_text": "Honest",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q9-d",
+                "option_label": "D",
+                "option_text": "Strong",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-3",
+            "question_number": 10,
+            "question_text": "Choose the word that correctly fills the blank: \"Rohan has been waiting for the school bus _____ 7:00 AM.\"",
+            "marks": 1.25,
+            "explanation": "We use \"since\" to denote a specific starting point in time (7:00 AM) with the present perfect continuous tense.",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-10",
+            "topic_name": "Vocabulary & Antonyms",
+            "options": [
+              {
+                "id": "opt-q10-a",
+                "option_label": "A",
+                "option_text": "for",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q10-b",
+                "option_label": "B",
+                "option_text": "since",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q10-c",
+                "option_label": "C",
+                "option_text": "from",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q10-d",
+                "option_label": "D",
+                "option_text": "until",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "created_at": "2026-10-18T08:16:21.957Z"
+    },
+    {
+      "id": "att-1792311754906-19fo",
+      "paper_id": "paper-day-01",
+      "student_id": "test-student-unit",
+      "started_at": "2026-10-18T08:22:34.906Z",
+      "submitted_at": "2026-10-18T08:22:34.944Z",
+      "time_spent_seconds": 1,
+      "status": "submitted",
+      "total_score": 1.25,
+      "max_marks": 12.5,
+      "percentage": 10,
+      "total_questions": 10,
+      "correct_count": 1,
+      "wrong_count": 0,
+      "unanswered_count": 9,
+      "accuracy_percentage": 100,
+      "paper_snapshot": {
+        "paper_id": "paper-day-01",
+        "paper_title": "Navodaya Model Paper 01 (Daily Practice)",
+        "duration_minutes": 30,
+        "total_marks": 12.5,
+        "negative_marking_per_question": 0,
+        "questions": [
+          {
+            "id": "q-mat-1",
+            "question_number": 1,
+            "question_text": "Four figures are given. Three are alike in some way and one is different. Choose the odd one out:",
+            "marks": 1.25,
+            "explanation": "Options A, B, and C are closed geometrical polygons formed by straight lines (Triangle, Square, Pentagon), whereas Option D is a Circle formed by a continuous curved line with no vertices.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-1",
+            "topic_name": "Odd Man Out",
+            "options": [
+              {
+                "id": "opt-q1-a",
+                "option_label": "A",
+                "option_text": "Triangle (3 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-b",
+                "option_label": "B",
+                "option_text": "Square (4 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-c",
+                "option_label": "C",
+                "option_text": "Pentagon (5 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-d",
+                "option_label": "D",
+                "option_text": "Circle (Curved boundary)",
+                "is_correct": true
+              }
+            ]
+          },
+          {
+            "id": "q-mat-2",
+            "question_number": 2,
+            "question_text": "Analogy: If Circle is to Sphere, then Square is to:",
+            "marks": 1.25,
+            "explanation": "A circle is a 2D geometric shape whose 3D counterpart is a sphere. Similarly, a square is a 2D shape whose 3D counterpart is a cube.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-4",
+            "topic_name": "Analogy",
+            "options": [
+              {
+                "id": "opt-q2-a",
+                "option_label": "A",
+                "option_text": "Cube",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q2-b",
+                "option_label": "B",
+                "option_text": "Rectangle",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q2-c",
+                "option_label": "C",
+                "option_text": "Cone",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q2-d",
+                "option_label": "D",
+                "option_text": "Cylinder",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-mat-3",
+            "question_number": 3,
+            "question_text": "Pattern Completion: A clock hand points to 12, then to 3, then to 6. Where will it point next?",
+            "marks": 1.25,
+            "explanation": "The hand rotates 90 degrees clockwise in each step: 12 -> 3 -> 6. Rotating another 90 degrees clockwise points directly to 9.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-2",
+            "topic_name": "Pattern Completion",
+            "options": [
+              {
+                "id": "opt-q3-a",
+                "option_label": "A",
+                "option_text": "8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q3-b",
+                "option_label": "B",
+                "option_text": "9",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q3-c",
+                "option_label": "C",
+                "option_text": "10",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q3-d",
+                "option_label": "D",
+                "option_text": "1",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-1",
+            "question_number": 4,
+            "question_text": "What is the difference between the place value and face value of 7 in the number 27,845?",
+            "marks": 1.25,
+            "explanation": "In 27,845, the digit 7 is at the thousands place, so its place value = 7,000. Its face value is 7. Difference = 7,000 - 7 = 6,993.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-5",
+            "topic_name": "Number & Numeric System",
+            "options": [
+              {
+                "id": "opt-q4-a",
+                "option_label": "A",
+                "option_text": "7,000",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q4-b",
+                "option_label": "B",
+                "option_text": "6,993",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q4-c",
+                "option_label": "C",
+                "option_text": "6,990",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q4-d",
+                "option_label": "D",
+                "option_text": "0",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-2",
+            "question_number": 5,
+            "question_text": "The HCF of two numbers is 16 and their product is 3072. What is their LCM?",
+            "marks": 1.25,
+            "explanation": "We know that Product of two numbers = HCF × LCM. Therefore, LCM = Product / HCF = 3072 / 16 = 192.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-6",
+            "topic_name": "LCM and HCF",
+            "options": [
+              {
+                "id": "opt-q5-a",
+                "option_label": "A",
+                "option_text": "182",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q5-b",
+                "option_label": "B",
+                "option_text": "192",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q5-c",
+                "option_label": "C",
+                "option_text": "202",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q5-d",
+                "option_label": "D",
+                "option_text": "212",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-3",
+            "question_number": 6,
+            "question_text": "Simplify: 3/4 + 1/2 - 1/8 = ?",
+            "marks": 1.25,
+            "explanation": "Find common denominator 8: 3/4 = 6/8, 1/2 = 4/8. So (6/8 + 4/8) - 1/8 = 10/8 - 1/8 = 9/8 = 1 1/8.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-7",
+            "topic_name": "Fractions & Decimals",
+            "options": [
+              {
+                "id": "opt-q6-a",
+                "option_label": "A",
+                "option_text": "7/8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q6-b",
+                "option_label": "B",
+                "option_text": "9/8",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q6-c",
+                "option_label": "C",
+                "option_text": "5/8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q6-d",
+                "option_label": "D",
+                "option_text": "11/8",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-4",
+            "question_number": 7,
+            "question_text": "A bus leaves Delhi at 9:15 AM and reaches Chandigarh at 3:45 PM on the same day. What was the total travel duration?",
+            "marks": 1.25,
+            "explanation": "From 9:15 AM to 12:00 Noon is 2 hours 45 minutes. From 12:00 Noon to 3:45 PM is 3 hours 45 minutes. Total = 2h 45m + 3h 45m = 5h 90m = 6 hours 30 minutes.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-8",
+            "topic_name": "Distance, Time and Speed",
+            "options": [
+              {
+                "id": "opt-q7-a",
+                "option_label": "A",
+                "option_text": "6 hours 15 minutes",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q7-b",
+                "option_label": "B",
+                "option_text": "6 hours 30 minutes",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q7-c",
+                "option_label": "C",
+                "option_text": "7 hours 00 minutes",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q7-d",
+                "option_label": "D",
+                "option_text": "5 hours 45 minutes",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-1",
+            "question_number": 8,
+            "question_text": "Read: \"A tiny bird built her nest on the topmost branch of an oak tree to keep her eggs safe from prowling foxes.\" Why did the bird build the nest on the topmost branch?",
+            "marks": 1.25,
+            "explanation": "The passage explicitly states she chose the topmost branch \"to keep her eggs safe from prowling foxes\".",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-9",
+            "topic_name": "Reading Comprehension",
+            "options": [
+              {
+                "id": "opt-q8-a",
+                "option_label": "A",
+                "option_text": "To get more morning sunlight",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q8-b",
+                "option_label": "B",
+                "option_text": "To protect eggs from foxes",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q8-c",
+                "option_label": "C",
+                "option_text": "To sing loudly for others",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q8-d",
+                "option_label": "D",
+                "option_text": "Because leaves were thicker",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-2",
+            "question_number": 9,
+            "question_text": "Select the correct opposite (antonym) of the word \"Courageous\":",
+            "marks": 1.25,
+            "explanation": "\"Courageous\" means brave and fearless. Its exact opposite is \"Cowardly\" or timid.",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-10",
+            "topic_name": "Vocabulary & Antonyms",
+            "options": [
+              {
+                "id": "opt-q9-a",
+                "option_label": "A",
+                "option_text": "Brave",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q9-b",
+                "option_label": "B",
+                "option_text": "Cowardly",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q9-c",
+                "option_label": "C",
+                "option_text": "Honest",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q9-d",
+                "option_label": "D",
+                "option_text": "Strong",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-3",
+            "question_number": 10,
+            "question_text": "Choose the word that correctly fills the blank: \"Rohan has been waiting for the school bus _____ 7:00 AM.\"",
+            "marks": 1.25,
+            "explanation": "We use \"since\" to denote a specific starting point in time (7:00 AM) with the present perfect continuous tense.",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-10",
+            "topic_name": "Vocabulary & Antonyms",
+            "options": [
+              {
+                "id": "opt-q10-a",
+                "option_label": "A",
+                "option_text": "for",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q10-b",
+                "option_label": "B",
+                "option_text": "since",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q10-c",
+                "option_label": "C",
+                "option_text": "from",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q10-d",
+                "option_label": "D",
+                "option_text": "until",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "created_at": "2026-10-18T08:22:34.906Z"
+    },
+    {
+      "id": "att-1792311881405-ii99",
+      "paper_id": "paper-day-01",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "started_at": "2026-10-18T08:24:41.405Z",
+      "submitted_at": "2026-10-18T08:24:41.454Z",
+      "time_spent_seconds": 1,
+      "status": "submitted",
+      "total_score": 2.5,
+      "max_marks": 12.5,
+      "percentage": 20,
+      "total_questions": 10,
+      "correct_count": 2,
+      "wrong_count": 0,
+      "unanswered_count": 8,
+      "accuracy_percentage": 100,
+      "paper_snapshot": {
+        "paper_id": "paper-day-01",
+        "paper_title": "Navodaya Model Paper 01 (Daily Practice)",
+        "duration_minutes": 30,
+        "total_marks": 12.5,
+        "negative_marking_per_question": 0,
+        "questions": [
+          {
+            "id": "q-mat-1",
+            "question_number": 1,
+            "question_text": "Four figures are given. Three are alike in some way and one is different. Choose the odd one out:",
+            "marks": 1.25,
+            "explanation": "Options A, B, and C are closed geometrical polygons formed by straight lines (Triangle, Square, Pentagon), whereas Option D is a Circle formed by a continuous curved line with no vertices.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-1",
+            "topic_name": "Odd Man Out",
+            "options": [
+              {
+                "id": "opt-q1-a",
+                "option_label": "A",
+                "option_text": "Triangle (3 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-b",
+                "option_label": "B",
+                "option_text": "Square (4 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-c",
+                "option_label": "C",
+                "option_text": "Pentagon (5 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-d",
+                "option_label": "D",
+                "option_text": "Circle (Curved boundary)",
+                "is_correct": true
+              }
+            ]
+          },
+          {
+            "id": "q-mat-2",
+            "question_number": 2,
+            "question_text": "Analogy: If Circle is to Sphere, then Square is to:",
+            "marks": 1.25,
+            "explanation": "A circle is a 2D geometric shape whose 3D counterpart is a sphere. Similarly, a square is a 2D shape whose 3D counterpart is a cube.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-4",
+            "topic_name": "Analogy",
+            "options": [
+              {
+                "id": "opt-q2-a",
+                "option_label": "A",
+                "option_text": "Cube",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q2-b",
+                "option_label": "B",
+                "option_text": "Rectangle",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q2-c",
+                "option_label": "C",
+                "option_text": "Cone",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q2-d",
+                "option_label": "D",
+                "option_text": "Cylinder",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-mat-3",
+            "question_number": 3,
+            "question_text": "Pattern Completion: A clock hand points to 12, then to 3, then to 6. Where will it point next?",
+            "marks": 1.25,
+            "explanation": "The hand rotates 90 degrees clockwise in each step: 12 -> 3 -> 6. Rotating another 90 degrees clockwise points directly to 9.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-2",
+            "topic_name": "Pattern Completion",
+            "options": [
+              {
+                "id": "opt-q3-a",
+                "option_label": "A",
+                "option_text": "8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q3-b",
+                "option_label": "B",
+                "option_text": "9",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q3-c",
+                "option_label": "C",
+                "option_text": "10",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q3-d",
+                "option_label": "D",
+                "option_text": "1",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-1",
+            "question_number": 4,
+            "question_text": "What is the difference between the place value and face value of 7 in the number 27,845?",
+            "marks": 1.25,
+            "explanation": "In 27,845, the digit 7 is at the thousands place, so its place value = 7,000. Its face value is 7. Difference = 7,000 - 7 = 6,993.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-5",
+            "topic_name": "Number & Numeric System",
+            "options": [
+              {
+                "id": "opt-q4-a",
+                "option_label": "A",
+                "option_text": "7,000",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q4-b",
+                "option_label": "B",
+                "option_text": "6,993",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q4-c",
+                "option_label": "C",
+                "option_text": "6,990",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q4-d",
+                "option_label": "D",
+                "option_text": "0",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-2",
+            "question_number": 5,
+            "question_text": "The HCF of two numbers is 16 and their product is 3072. What is their LCM?",
+            "marks": 1.25,
+            "explanation": "We know that Product of two numbers = HCF × LCM. Therefore, LCM = Product / HCF = 3072 / 16 = 192.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-6",
+            "topic_name": "LCM and HCF",
+            "options": [
+              {
+                "id": "opt-q5-a",
+                "option_label": "A",
+                "option_text": "182",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q5-b",
+                "option_label": "B",
+                "option_text": "192",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q5-c",
+                "option_label": "C",
+                "option_text": "202",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q5-d",
+                "option_label": "D",
+                "option_text": "212",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-3",
+            "question_number": 6,
+            "question_text": "Simplify: 3/4 + 1/2 - 1/8 = ?",
+            "marks": 1.25,
+            "explanation": "Find common denominator 8: 3/4 = 6/8, 1/2 = 4/8. So (6/8 + 4/8) - 1/8 = 10/8 - 1/8 = 9/8 = 1 1/8.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-7",
+            "topic_name": "Fractions & Decimals",
+            "options": [
+              {
+                "id": "opt-q6-a",
+                "option_label": "A",
+                "option_text": "7/8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q6-b",
+                "option_label": "B",
+                "option_text": "9/8",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q6-c",
+                "option_label": "C",
+                "option_text": "5/8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q6-d",
+                "option_label": "D",
+                "option_text": "11/8",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-4",
+            "question_number": 7,
+            "question_text": "A bus leaves Delhi at 9:15 AM and reaches Chandigarh at 3:45 PM on the same day. What was the total travel duration?",
+            "marks": 1.25,
+            "explanation": "From 9:15 AM to 12:00 Noon is 2 hours 45 minutes. From 12:00 Noon to 3:45 PM is 3 hours 45 minutes. Total = 2h 45m + 3h 45m = 5h 90m = 6 hours 30 minutes.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-8",
+            "topic_name": "Distance, Time and Speed",
+            "options": [
+              {
+                "id": "opt-q7-a",
+                "option_label": "A",
+                "option_text": "6 hours 15 minutes",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q7-b",
+                "option_label": "B",
+                "option_text": "6 hours 30 minutes",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q7-c",
+                "option_label": "C",
+                "option_text": "7 hours 00 minutes",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q7-d",
+                "option_label": "D",
+                "option_text": "5 hours 45 minutes",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-1",
+            "question_number": 8,
+            "question_text": "Read: \"A tiny bird built her nest on the topmost branch of an oak tree to keep her eggs safe from prowling foxes.\" Why did the bird build the nest on the topmost branch?",
+            "marks": 1.25,
+            "explanation": "The passage explicitly states she chose the topmost branch \"to keep her eggs safe from prowling foxes\".",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-9",
+            "topic_name": "Reading Comprehension",
+            "options": [
+              {
+                "id": "opt-q8-a",
+                "option_label": "A",
+                "option_text": "To get more morning sunlight",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q8-b",
+                "option_label": "B",
+                "option_text": "To protect eggs from foxes",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q8-c",
+                "option_label": "C",
+                "option_text": "To sing loudly for others",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q8-d",
+                "option_label": "D",
+                "option_text": "Because leaves were thicker",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-2",
+            "question_number": 9,
+            "question_text": "Select the correct opposite (antonym) of the word \"Courageous\":",
+            "marks": 1.25,
+            "explanation": "\"Courageous\" means brave and fearless. Its exact opposite is \"Cowardly\" or timid.",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-10",
+            "topic_name": "Vocabulary & Antonyms",
+            "options": [
+              {
+                "id": "opt-q9-a",
+                "option_label": "A",
+                "option_text": "Brave",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q9-b",
+                "option_label": "B",
+                "option_text": "Cowardly",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q9-c",
+                "option_label": "C",
+                "option_text": "Honest",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q9-d",
+                "option_label": "D",
+                "option_text": "Strong",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-3",
+            "question_number": 10,
+            "question_text": "Choose the word that correctly fills the blank: \"Rohan has been waiting for the school bus _____ 7:00 AM.\"",
+            "marks": 1.25,
+            "explanation": "We use \"since\" to denote a specific starting point in time (7:00 AM) with the present perfect continuous tense.",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-10",
+            "topic_name": "Vocabulary & Antonyms",
+            "options": [
+              {
+                "id": "opt-q10-a",
+                "option_label": "A",
+                "option_text": "for",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q10-b",
+                "option_label": "B",
+                "option_text": "since",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q10-c",
+                "option_label": "C",
+                "option_text": "from",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q10-d",
+                "option_label": "D",
+                "option_text": "until",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "created_at": "2026-10-18T08:24:41.405Z"
+    },
+    {
+      "id": "att-1792311948485-fpc7",
+      "paper_id": "paper-day-01",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "started_at": "2026-10-18T08:25:48.485Z",
+      "submitted_at": "2026-10-18T08:25:48.533Z",
+      "time_spent_seconds": 1,
+      "status": "submitted",
+      "total_score": 2.5,
+      "max_marks": 12.5,
+      "percentage": 20,
+      "total_questions": 10,
+      "correct_count": 2,
+      "wrong_count": 0,
+      "unanswered_count": 8,
+      "accuracy_percentage": 100,
+      "paper_snapshot": {
+        "paper_id": "paper-day-01",
+        "paper_title": "Navodaya Model Paper 01 (Daily Practice)",
+        "duration_minutes": 30,
+        "total_marks": 12.5,
+        "negative_marking_per_question": 0,
+        "questions": [
+          {
+            "id": "q-mat-1",
+            "question_number": 1,
+            "question_text": "Four figures are given. Three are alike in some way and one is different. Choose the odd one out:",
+            "marks": 1.25,
+            "explanation": "Options A, B, and C are closed geometrical polygons formed by straight lines (Triangle, Square, Pentagon), whereas Option D is a Circle formed by a continuous curved line with no vertices.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-1",
+            "topic_name": "Odd Man Out",
+            "options": [
+              {
+                "id": "opt-q1-a",
+                "option_label": "A",
+                "option_text": "Triangle (3 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-b",
+                "option_label": "B",
+                "option_text": "Square (4 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-c",
+                "option_label": "C",
+                "option_text": "Pentagon (5 sides)",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q1-d",
+                "option_label": "D",
+                "option_text": "Circle (Curved boundary)",
+                "is_correct": true
+              }
+            ]
+          },
+          {
+            "id": "q-mat-2",
+            "question_number": 2,
+            "question_text": "Analogy: If Circle is to Sphere, then Square is to:",
+            "marks": 1.25,
+            "explanation": "A circle is a 2D geometric shape whose 3D counterpart is a sphere. Similarly, a square is a 2D shape whose 3D counterpart is a cube.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-4",
+            "topic_name": "Analogy",
+            "options": [
+              {
+                "id": "opt-q2-a",
+                "option_label": "A",
+                "option_text": "Cube",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q2-b",
+                "option_label": "B",
+                "option_text": "Rectangle",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q2-c",
+                "option_label": "C",
+                "option_text": "Cone",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q2-d",
+                "option_label": "D",
+                "option_text": "Cylinder",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-mat-3",
+            "question_number": 3,
+            "question_text": "Pattern Completion: A clock hand points to 12, then to 3, then to 6. Where will it point next?",
+            "marks": 1.25,
+            "explanation": "The hand rotates 90 degrees clockwise in each step: 12 -> 3 -> 6. Rotating another 90 degrees clockwise points directly to 9.",
+            "subject_id": "11111111-1111-1111-1111-111111111111",
+            "subject_name": "Mental Ability Test",
+            "subject_code": "MAT",
+            "topic_id": "top-2",
+            "topic_name": "Pattern Completion",
+            "options": [
+              {
+                "id": "opt-q3-a",
+                "option_label": "A",
+                "option_text": "8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q3-b",
+                "option_label": "B",
+                "option_text": "9",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q3-c",
+                "option_label": "C",
+                "option_text": "10",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q3-d",
+                "option_label": "D",
+                "option_text": "1",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-1",
+            "question_number": 4,
+            "question_text": "What is the difference between the place value and face value of 7 in the number 27,845?",
+            "marks": 1.25,
+            "explanation": "In 27,845, the digit 7 is at the thousands place, so its place value = 7,000. Its face value is 7. Difference = 7,000 - 7 = 6,993.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-5",
+            "topic_name": "Number & Numeric System",
+            "options": [
+              {
+                "id": "opt-q4-a",
+                "option_label": "A",
+                "option_text": "7,000",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q4-b",
+                "option_label": "B",
+                "option_text": "6,993",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q4-c",
+                "option_label": "C",
+                "option_text": "6,990",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q4-d",
+                "option_label": "D",
+                "option_text": "0",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-2",
+            "question_number": 5,
+            "question_text": "The HCF of two numbers is 16 and their product is 3072. What is their LCM?",
+            "marks": 1.25,
+            "explanation": "We know that Product of two numbers = HCF × LCM. Therefore, LCM = Product / HCF = 3072 / 16 = 192.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-6",
+            "topic_name": "LCM and HCF",
+            "options": [
+              {
+                "id": "opt-q5-a",
+                "option_label": "A",
+                "option_text": "182",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q5-b",
+                "option_label": "B",
+                "option_text": "192",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q5-c",
+                "option_label": "C",
+                "option_text": "202",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q5-d",
+                "option_label": "D",
+                "option_text": "212",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-3",
+            "question_number": 6,
+            "question_text": "Simplify: 3/4 + 1/2 - 1/8 = ?",
+            "marks": 1.25,
+            "explanation": "Find common denominator 8: 3/4 = 6/8, 1/2 = 4/8. So (6/8 + 4/8) - 1/8 = 10/8 - 1/8 = 9/8 = 1 1/8.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-7",
+            "topic_name": "Fractions & Decimals",
+            "options": [
+              {
+                "id": "opt-q6-a",
+                "option_label": "A",
+                "option_text": "7/8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q6-b",
+                "option_label": "B",
+                "option_text": "9/8",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q6-c",
+                "option_label": "C",
+                "option_text": "5/8",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q6-d",
+                "option_label": "D",
+                "option_text": "11/8",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-math-4",
+            "question_number": 7,
+            "question_text": "A bus leaves Delhi at 9:15 AM and reaches Chandigarh at 3:45 PM on the same day. What was the total travel duration?",
+            "marks": 1.25,
+            "explanation": "From 9:15 AM to 12:00 Noon is 2 hours 45 minutes. From 12:00 Noon to 3:45 PM is 3 hours 45 minutes. Total = 2h 45m + 3h 45m = 5h 90m = 6 hours 30 minutes.",
+            "subject_id": "22222222-2222-2222-2222-222222222222",
+            "subject_name": "Arithmetic Test",
+            "subject_code": "MATH",
+            "topic_id": "top-8",
+            "topic_name": "Distance, Time and Speed",
+            "options": [
+              {
+                "id": "opt-q7-a",
+                "option_label": "A",
+                "option_text": "6 hours 15 minutes",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q7-b",
+                "option_label": "B",
+                "option_text": "6 hours 30 minutes",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q7-c",
+                "option_label": "C",
+                "option_text": "7 hours 00 minutes",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q7-d",
+                "option_label": "D",
+                "option_text": "5 hours 45 minutes",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-1",
+            "question_number": 8,
+            "question_text": "Read: \"A tiny bird built her nest on the topmost branch of an oak tree to keep her eggs safe from prowling foxes.\" Why did the bird build the nest on the topmost branch?",
+            "marks": 1.25,
+            "explanation": "The passage explicitly states she chose the topmost branch \"to keep her eggs safe from prowling foxes\".",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-9",
+            "topic_name": "Reading Comprehension",
+            "options": [
+              {
+                "id": "opt-q8-a",
+                "option_label": "A",
+                "option_text": "To get more morning sunlight",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q8-b",
+                "option_label": "B",
+                "option_text": "To protect eggs from foxes",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q8-c",
+                "option_label": "C",
+                "option_text": "To sing loudly for others",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q8-d",
+                "option_label": "D",
+                "option_text": "Because leaves were thicker",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-2",
+            "question_number": 9,
+            "question_text": "Select the correct opposite (antonym) of the word \"Courageous\":",
+            "marks": 1.25,
+            "explanation": "\"Courageous\" means brave and fearless. Its exact opposite is \"Cowardly\" or timid.",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-10",
+            "topic_name": "Vocabulary & Antonyms",
+            "options": [
+              {
+                "id": "opt-q9-a",
+                "option_label": "A",
+                "option_text": "Brave",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q9-b",
+                "option_label": "B",
+                "option_text": "Cowardly",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q9-c",
+                "option_label": "C",
+                "option_text": "Honest",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q9-d",
+                "option_label": "D",
+                "option_text": "Strong",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": "q-lang-3",
+            "question_number": 10,
+            "question_text": "Choose the word that correctly fills the blank: \"Rohan has been waiting for the school bus _____ 7:00 AM.\"",
+            "marks": 1.25,
+            "explanation": "We use \"since\" to denote a specific starting point in time (7:00 AM) with the present perfect continuous tense.",
+            "subject_id": "33333333-3333-3333-3333-333333333333",
+            "subject_name": "Language Test",
+            "subject_code": "LANG",
+            "topic_id": "top-10",
+            "topic_name": "Vocabulary & Antonyms",
+            "options": [
+              {
+                "id": "opt-q10-a",
+                "option_label": "A",
+                "option_text": "for",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q10-b",
+                "option_label": "B",
+                "option_text": "since",
+                "is_correct": true
+              },
+              {
+                "id": "opt-q10-c",
+                "option_label": "C",
+                "option_text": "from",
+                "is_correct": false
+              },
+              {
+                "id": "opt-q10-d",
+                "option_label": "D",
+                "option_text": "until",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "created_at": "2026-10-18T08:25:48.485Z"
+    }
+  ],
+  "answers": [
+    {
+      "id": "ans-1792311382005-iist",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-mat-1",
+      "selected_option_id": "opt-q1-d",
+      "selected_option_label": "D",
+      "is_marked_for_review": false,
+      "is_correct": true,
+      "marks_obtained": 1.25,
+      "time_spent_seconds": 15,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-q-mat-2",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-mat-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-q-mat-3",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-mat-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-q-math-1",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-math-1",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-q-math-2",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-math-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-q-math-3",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-math-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-q-math-4",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-math-4",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-q-lang-1",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-lang-1",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-q-lang-2",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-lang-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-q-lang-3",
+      "attempt_id": "att-1792311381957-ft88",
+      "question_id": "q-lang-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:16:22.050Z"
+    },
+    {
+      "id": "ans-1792311754924-eal5",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-mat-1",
+      "selected_option_id": "opt-q1-d",
+      "selected_option_label": "D",
+      "is_marked_for_review": false,
+      "is_correct": true,
+      "marks_obtained": 1.25,
+      "time_spent_seconds": 15,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-q-mat-2",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-mat-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-q-mat-3",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-mat-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-q-math-1",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-math-1",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-q-math-2",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-math-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-q-math-3",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-math-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-q-math-4",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-math-4",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-q-lang-1",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-lang-1",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-q-lang-2",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-lang-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-q-lang-3",
+      "attempt_id": "att-1792311754906-19fo",
+      "question_id": "q-lang-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:22:34.944Z"
+    },
+    {
+      "id": "ans-1792311881427-ytbs",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-mat-1",
+      "selected_option_id": "opt-q1-d",
+      "selected_option_label": "D",
+      "is_marked_for_review": false,
+      "is_correct": true,
+      "marks_obtained": 1.25,
+      "time_spent_seconds": 30,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-1792311881440-jfjn",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-mat-2",
+      "selected_option_id": "opt-q2-a",
+      "selected_option_label": "A",
+      "is_marked_for_review": true,
+      "is_correct": true,
+      "marks_obtained": 1.25,
+      "time_spent_seconds": 45,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-q-mat-3",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-mat-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-q-math-1",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-math-1",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-q-math-2",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-math-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-q-math-3",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-math-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-q-math-4",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-math-4",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-q-lang-1",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-lang-1",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-q-lang-2",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-lang-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-q-lang-3",
+      "attempt_id": "att-1792311881405-ii99",
+      "question_id": "q-lang-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "ans-1792311948504-kqal",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-mat-1",
+      "selected_option_id": "opt-q1-d",
+      "selected_option_label": "D",
+      "is_marked_for_review": false,
+      "is_correct": true,
+      "marks_obtained": 1.25,
+      "time_spent_seconds": 30,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    },
+    {
+      "id": "ans-1792311948516-yjrw",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-mat-2",
+      "selected_option_id": "opt-q2-a",
+      "selected_option_label": "A",
+      "is_marked_for_review": true,
+      "is_correct": true,
+      "marks_obtained": 1.25,
+      "time_spent_seconds": 45,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    },
+    {
+      "id": "ans-q-mat-3",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-mat-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    },
+    {
+      "id": "ans-q-math-1",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-math-1",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    },
+    {
+      "id": "ans-q-math-2",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-math-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    },
+    {
+      "id": "ans-q-math-3",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-math-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    },
+    {
+      "id": "ans-q-math-4",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-math-4",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    },
+    {
+      "id": "ans-q-lang-1",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-lang-1",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    },
+    {
+      "id": "ans-q-lang-2",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-lang-2",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    },
+    {
+      "id": "ans-q-lang-3",
+      "attempt_id": "att-1792311948485-fpc7",
+      "question_id": "q-lang-3",
+      "selected_option_id": null,
+      "selected_option_label": null,
+      "is_marked_for_review": false,
+      "is_correct": null,
+      "marks_obtained": 0,
+      "time_spent_seconds": 0,
+      "saved_at": "2026-10-18T08:25:48.533Z"
+    }
+  ],
+  "sessions": [],
+  "revisionItems": [
+    {
+      "id": "rev-1792311382053-kfgv",
+      "student_id": "test-student-unit",
+      "question_id": "q-mat-2",
+      "last_attempt_id": "att-1792311754906-19fo",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:16:22.053Z"
+    },
+    {
+      "id": "rev-1792311382053-g92d",
+      "student_id": "test-student-unit",
+      "question_id": "q-mat-3",
+      "last_attempt_id": "att-1792311754906-19fo",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:16:22.053Z"
+    },
+    {
+      "id": "rev-1792311382053-w20a",
+      "student_id": "test-student-unit",
+      "question_id": "q-math-1",
+      "last_attempt_id": "att-1792311754906-19fo",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:16:22.053Z"
+    },
+    {
+      "id": "rev-1792311382053-aop4",
+      "student_id": "test-student-unit",
+      "question_id": "q-math-2",
+      "last_attempt_id": "att-1792311754906-19fo",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:16:22.053Z"
+    },
+    {
+      "id": "rev-1792311382053-uhlo",
+      "student_id": "test-student-unit",
+      "question_id": "q-math-3",
+      "last_attempt_id": "att-1792311754906-19fo",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:16:22.053Z"
+    },
+    {
+      "id": "rev-1792311382053-scbf",
+      "student_id": "test-student-unit",
+      "question_id": "q-math-4",
+      "last_attempt_id": "att-1792311754906-19fo",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:16:22.053Z"
+    },
+    {
+      "id": "rev-1792311382053-fj6f",
+      "student_id": "test-student-unit",
+      "question_id": "q-lang-1",
+      "last_attempt_id": "att-1792311754906-19fo",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:16:22.053Z"
+    },
+    {
+      "id": "rev-1792311382053-4wc4",
+      "student_id": "test-student-unit",
+      "question_id": "q-lang-2",
+      "last_attempt_id": "att-1792311754906-19fo",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:16:22.053Z"
+    },
+    {
+      "id": "rev-1792311382053-mguj",
+      "student_id": "test-student-unit",
+      "question_id": "q-lang-3",
+      "last_attempt_id": "att-1792311754906-19fo",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:16:22.053Z"
+    },
+    {
+      "id": "rev-1792311881454-296b",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "question_id": "q-mat-3",
+      "last_attempt_id": "att-1792311948485-fpc7",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "rev-1792311881454-5be7",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "question_id": "q-math-1",
+      "last_attempt_id": "att-1792311948485-fpc7",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "rev-1792311881454-3v00",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "question_id": "q-math-2",
+      "last_attempt_id": "att-1792311948485-fpc7",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "rev-1792311881454-fdg3",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "question_id": "q-math-3",
+      "last_attempt_id": "att-1792311948485-fpc7",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "rev-1792311881454-q534",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "question_id": "q-math-4",
+      "last_attempt_id": "att-1792311948485-fpc7",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "rev-1792311881454-udgn",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "question_id": "q-lang-1",
+      "last_attempt_id": "att-1792311948485-fpc7",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:24:41.454Z"
+    },
+    {
+      "id": "rev-1792311881454-dacn",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "question_id": "q-lang-2",
+      "last_attempt_id": "att-1792311948485-fpc7",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:24:41.455Z"
+    },
+    {
+      "id": "rev-1792311881455-zj8r",
+      "student_id": "student-00000000-0000-0000-0000-000000000002",
+      "question_id": "q-lang-3",
+      "last_attempt_id": "att-1792311948485-fpc7",
+      "missed_count": 2,
+      "mastered": false,
+      "created_at": "2026-10-18T08:24:41.455Z"
+    }
+  ]
+}
