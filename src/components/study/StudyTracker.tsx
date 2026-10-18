@@ -10,9 +10,11 @@ interface StudyTrackerProps {
 export function StudyTracker({ sessionType, referenceId }: StudyTrackerProps) {
   const activeSecondsRef = useRef<number>(0);
   const isTabVisibleRef = useRef<boolean>(true);
-  const lastUserActivityRef = useRef<number>(Date.now());
+  const lastUserActivityRef = useRef<number>(0);
 
   useEffect(() => {
+    lastUserActivityRef.current = Date.now();
+
     // 1. Tab visibility handling
     const handleVisibilityChange = () => {
       isTabVisibleRef.current = document.visibilityState === 'visible';

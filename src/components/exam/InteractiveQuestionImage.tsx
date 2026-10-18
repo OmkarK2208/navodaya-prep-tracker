@@ -24,19 +24,22 @@ export function InteractiveQuestionImage({
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Reset zoom & rotation when modal opens/closes
+  const handleOpenModal = () => {
+    setScale(1);
+    setRotation(0);
+    setIsOpen(true);
+  };
+
   useEffect(() => {
-    if (isOpen) {
-      setScale(1);
-      setRotation(0);
-      const handleKeyDown = (e: KeyboardEvent) => {
-        if (e.key === 'Escape') setIsOpen(false);
-        if (e.key === '+' || e.key === '=') setScale((s) => Math.min(s + 0.25, 3));
-        if (e.key === '-') setScale((s) => Math.max(s - 0.25, 0.75));
-      };
-      window.addEventListener('keydown', handleKeyDown);
-      return () => window.removeEventListener('keydown', handleKeyDown);
-    }
+    if (!isOpen) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsOpen(false);
+      if (e.key === '+' || e.key === '=') setScale((s) => Math.min(s + 0.25, 3));
+      if (e.key === '-') setScale((s) => Math.max(s - 0.25, 0.75));
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen]);
 
   const handleZoomIn = () => setScale((s) => Math.min(s + 0.25, 3.5));
@@ -52,7 +55,7 @@ export function InteractiveQuestionImage({
       {/* Thumbnail / In-place Display */}
       <div
         className={`group relative rounded-2xl overflow-hidden border border-slate-200/90 bg-white p-2 shadow-xs transition-all hover:border-indigo-400 hover:shadow-md cursor-zoom-in ${className}`}
-        onClick={() => !hasError && setIsOpen(true)}
+        onClick={() => !hasError && handleOpenModal()}
       >
         {/* Loading Spinner */}
         {isLoading && (
