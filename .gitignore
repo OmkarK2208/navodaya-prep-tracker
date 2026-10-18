@@ -42,4 +42,5 @@ next-env.d.ts
 
 # uploads
 /public/uploads/*.pdf
+/public/uploads/extracted_images/crop_*
 
