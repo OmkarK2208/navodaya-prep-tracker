@@ -966,7 +966,7 @@ export default function PdfGeneratorPage() {
                       <img
                         src={q.question_image_url}
                         alt={`Question ${q.question_number} diagram`}
-                        className="max-h-56 max-w-full rounded-xl border border-slate-200 bg-white object-contain p-1"
+                        className="max-h-72 w-full rounded-2xl border border-slate-200 bg-white object-contain p-2"
                       />
                     </div>
                   )}

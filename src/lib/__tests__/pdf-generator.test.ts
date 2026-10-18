@@ -132,4 +132,28 @@ describe('PDF-to-Question-Paper Generator Pipeline', () => {
     expect(correctOpt?.option_label).toBe('B');
     expect(correctOpt?.option_text).toContain('तंतोतंत');
   });
+
+  it('extracts full 80 questions and individual diagram images from authentic 16-page exam paper', () => {
+    const userPdf = path.resolve(process.cwd(), 'public', 'uploads', '1792315420883-paper_2024.pdf');
+    if (!fs.existsSync(userPdf)) return;
+
+    const tempJson = path.join(testUploadsDir, `test_full_${Date.now()}.json`);
+    const result = spawnSync('python', ['-X', 'utf8', scriptPath, userPdf, testUploadsDir, tempJson], {
+      encoding: 'utf8',
+      windowsHide: true,
+    });
+
+    expect(result.status).toBe(0);
+    expect(fs.existsSync(tempJson)).toBe(true);
+
+    const jsonContent = fs.readFileSync(tempJson, 'utf8');
+    fs.unlinkSync(tempJson);
+
+    const parsed = JSON.parse(jsonContent);
+    expect(parsed.success).toBe(true);
+    expect(parsed.questions.length).toBe(80);
+    expect(parsed.questions.every((q: any) => !!q.question_image_url)).toBe(true);
+    expect(parsed.questions.every((q: any) => q.options.length === 4)).toBe(true);
+  });
 });
+

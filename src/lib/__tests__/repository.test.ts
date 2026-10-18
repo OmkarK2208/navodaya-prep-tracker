@@ -72,7 +72,7 @@ describe('LocalPersistentRepository Database Operations', () => {
   });
 
   it('runs an end-to-end exam attempt flow with answer saving, submission, and revision tracking', async () => {
-    // 1. Get starter paper with questions
+    // 1. Get starter paper with questions or create dedicated test paper
     const papers = await repo.getPapers();
     let starter = null;
     let paperWithQ = null;
@@ -84,8 +84,33 @@ describe('LocalPersistentRepository Database Operations', () => {
         break;
       }
     }
-    expect(starter).toBeDefined();
-    expect(paperWithQ).toBeDefined();
+
+    if (!starter || !paperWithQ) {
+      starter = await repo.createPaper({
+        title: 'E2E Attempt Flow Paper',
+        description: 'Self-contained test paper',
+        duration_minutes: 60,
+        total_marks: 10,
+        negative_marking_per_question: 0,
+        is_published: true,
+      });
+      await repo.addQuestion({
+        paper_id: starter.id,
+        question_number: 1,
+        question_text: 'What is 5 + 7?',
+        marks: 2.5,
+        options: [
+          { option_label: 'A', option_text: '10', is_correct: false },
+          { option_label: 'B', option_text: '12', is_correct: true },
+          { option_label: 'C', option_text: '14', is_correct: false },
+          { option_label: 'D', option_text: '15', is_correct: false },
+        ],
+      });
+      paperWithQ = await repo.getPaperById(starter.id);
+    }
+
+    expect(starter).not.toBeNull();
+    expect(paperWithQ).not.toBeNull();
 
     // 2. Create attempt for student
     const studentId = 'test-student-unit';

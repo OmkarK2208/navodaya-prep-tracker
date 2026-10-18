@@ -323,8 +323,15 @@ export default function ExamInterfacePage() {
                   </div>
                 </div>
 
-                {/* Question Text */}
+                {/* Question Text & Diagram */}
                 <div className="space-y-4 mb-8">
+                  {(currentQ as any).instructions && (
+                    <div className="p-3 bg-indigo-50/70 rounded-2xl border border-indigo-100 text-xs text-indigo-900 font-medium">
+                      <span className="font-bold block mb-0.5">Directions / सूचना:</span>
+                      {(currentQ as any).instructions}
+                    </div>
+                  )}
+
                   <div className="flex items-start gap-3">
                     <span className="h-7 w-7 rounded-lg bg-slate-900 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                       {currentQ.question_number}
@@ -335,12 +342,12 @@ export default function ExamInterfacePage() {
                   </div>
 
                   {currentQ.question_image_url && (
-                    <div className="max-w-md mx-auto my-4 rounded-xl overflow-hidden border border-slate-200">
+                    <div className="max-w-3xl mx-auto my-4 rounded-2xl overflow-hidden border border-slate-200 bg-white p-2 shadow-xs">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={currentQ.question_image_url}
                         alt={`Figure for Question ${currentQ.question_number}`}
-                        className="w-full object-contain max-h-64"
+                        className="w-full object-contain max-h-72 sm:max-h-80"
                       />
                     </div>
                   )}

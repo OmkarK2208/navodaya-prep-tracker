@@ -207,6 +207,18 @@ export default function SolutionsReviewPage() {
                   {q.question_text}
                 </p>
 
+                {/* Question Figure / Diagram */}
+                {(q as any).question_image_url && (
+                  <div className="max-w-2xl mx-auto my-3 rounded-2xl overflow-hidden border border-slate-200 bg-white p-2 shadow-xs">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={(q as any).question_image_url}
+                      alt={`Figure for Question ${q.question_number}`}
+                      className="w-full object-contain max-h-72"
+                    />
+                  </div>
+                )}
+
                 {/* Options List with Visual Clarification */}
                 <div className="space-y-2.5">
                   {q.options.map((opt) => {
