@@ -1,0 +1,240 @@
+{
+  "success": true,
+  "total_pages": 3,
+  "is_scanned": false,
+  "extracted_questions_count": 8,
+  "questions": [
+    {
+      "question_number": 1,
+      "subject_code": "MAT",
+      "subject_name": "Mental Ability Test",
+      "question_text": "खालील आकृत्यांपैकी वेगळी आकृती ओळखा (Odd Man Out):",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "त्रिकोण (Triangle ‐ 3 बाजू)"
+        },
+        {
+          "option_label": "B",
+          "option_text": "चौकोन (Square ‐ 4 बाजू)"
+        },
+        {
+          "option_label": "C",
+          "option_text": "वर्तुळ (Circle ‐ वक्र कडा)"
+        },
+        {
+          "option_label": "D",
+          "option_text": "पंचकोन (Pentagon ‐ 5 बाजू)"
+        }
+      ],
+      "question_image_url": "/uploads/extracted_images/fig_p1_1_12.png",
+      "marks": 1.25,
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "instructions": null
+    },
+    {
+      "question_number": 2,
+      "subject_code": "MAT",
+      "subject_name": "Mental Ability Test",
+      "question_text": "संबंध जोडा (Analogy): जर वर्तुळ : गोल (Sphere) तर चौरस : ?",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "घन (Cube)"
+        },
+        {
+          "option_label": "B",
+          "option_text": "आयत (Rectangle)"
+        },
+        {
+          "option_label": "C",
+          "option_text": "शंकू (Cone)"
+        },
+        {
+          "option_label": "D",
+          "option_text": "वृत्तचिती (Cylinder)"
+        }
+      ],
+      "question_image_url": "/uploads/extracted_images/fig_p1_1_12.png",
+      "marks": 1.25,
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "instructions": null
+    },
+    {
+      "question_number": 41,
+      "subject_code": "MATH",
+      "subject_name": "Arithmetic Test",
+      "question_text": "27,845 या संख्येतील 7 ची स्थानिक किंमत आणि दर्शनी किंमत यामधील फरक किती?",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "7,000"
+        },
+        {
+          "option_label": "B",
+          "option_text": "6,993"
+        },
+        {
+          "option_label": "C",
+          "option_text": "6,990"
+        },
+        {
+          "option_label": "D",
+          "option_text": "0"
+        }
+      ],
+      "question_image_url": null,
+      "marks": 1.25,
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "instructions": null
+    },
+    {
+      "question_number": 42,
+      "subject_code": "MATH",
+      "subject_name": "Arithmetic Test",
+      "question_text": "दोन संख्यांचा म.सा.वि. 16 असून त्यांचा गुणाकार 3072 आहे, तर त्यांचा ल.सा.वि. किती?",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "182"
+        },
+        {
+          "option_label": "B",
+          "option_text": "192"
+        },
+        {
+          "option_label": "C",
+          "option_text": "202"
+        },
+        {
+          "option_label": "D",
+          "option_text": "212"
+        }
+      ],
+      "question_image_url": null,
+      "marks": 1.25,
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "instructions": null
+    },
+    {
+      "question_number": 43,
+      "subject_code": "MATH",
+      "subject_name": "Arithmetic Test",
+      "question_text": "सरळरूप द्या: 3/4 + 1/2 ‐ 1/8 = ?",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "7/8"
+        },
+        {
+          "option_label": "B",
+          "option_text": "9/8"
+        },
+        {
+          "option_label": "C",
+          "option_text": "5/8"
+        },
+        {
+          "option_label": "D",
+          "option_text": "11/8"
+        }
+      ],
+      "question_image_url": null,
+      "marks": 1.25,
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "instructions": null
+    },
+    {
+      "question_number": 61,
+      "subject_code": "LANG",
+      "subject_name": "Language Test",
+      "question_text": "जंगलात कोण राहात होते?",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "दयाळू हरीण"
+        },
+        {
+          "option_label": "B",
+          "option_text": "क्रूर वाघ"
+        },
+        {
+          "option_label": "C",
+          "option_text": "धूर्त कोल्हा"
+        },
+        {
+          "option_label": "D",
+          "option_text": "खोडकर माकड"
+        }
+      ],
+      "question_image_url": null,
+      "marks": 1.25,
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "instructions": null
+    },
+    {
+      "question_number": 62,
+      "subject_code": "LANG",
+      "subject_name": "Language Test",
+      "question_text": "हरणाने कोणाचा जीव वाचवला?",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "सशाचा जीव"
+        },
+        {
+          "option_label": "B",
+          "option_text": "कोल्ह्याचा जीव"
+        },
+        {
+          "option_label": "C",
+          "option_text": "पक्षाचा जीव"
+        },
+        {
+          "option_label": "D",
+          "option_text": "सिंहाचा जीव"
+        }
+      ],
+      "question_image_url": null,
+      "marks": 1.25,
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "instructions": null
+    },
+    {
+      "question_number": 63,
+      "subject_code": "LANG",
+      "subject_name": "Language Test",
+      "question_text": "'दयाळू' या शब्दाचा विरुद्धार्थी शब्द कोणता?",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "प्रेमळ"
+        },
+        {
+          "option_label": "B",
+          "option_text": "क्रूर किंवा दुष्ट"
+        },
+        {
+          "option_label": "C",
+          "option_text": "शांत"
+        },
+        {
+          "option_label": "D",
+          "option_text": "हुशार"
+        }
+      ],
+      "question_image_url": null,
+      "marks": 1.25,
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "instructions": null
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "total_pages": 1,
+  "is_scanned": true,
+  "extracted_questions_count": 1,
+  "questions": [
+    {
+      "question_number": 1,
+      "subject_code": "MAT",
+      "subject_name": "Mental Ability Test",
+      "question_text": "प्रश्न 1: (कृपया आकृती किंवा मजकूर तपासा)",
+      "options": [
+        {
+          "option_label": "A",
+          "option_text": "पर्याय A"
+        },
+        {
+          "option_label": "B",
+          "option_text": "पर्याय B"
+        },
+        {
+          "option_label": "C",
+          "option_text": "पर्याय C"
+        },
+        {
+          "option_label": "D",
+          "option_text": "पर्याय D"
+        }
+      ],
+      "question_image_url": "/uploads/extracted_images/fig_p1_1_5.png",
+      "marks": 1.25,
+      "is_uncertain": true,
+      "uncertainty_reason": "Scanned page or non-standard format: Please verify text and options",
+      "instructions": null
+    }
+  ]
+}

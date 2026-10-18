@@ -72,18 +72,27 @@ describe('LocalPersistentRepository Database Operations', () => {
   });
 
   it('runs an end-to-end exam attempt flow with answer saving, submission, and revision tracking', async () => {
-    // 1. Get starter paper
+    // 1. Get starter paper with questions
     const papers = await repo.getPapers();
-    const starter = papers[0];
+    let starter = null;
+    let paperWithQ = null;
+    for (const p of papers) {
+      const full = await repo.getPaperById(p.id);
+      if (full?.questions && full.questions.length > 0) {
+        starter = p;
+        paperWithQ = full;
+        break;
+      }
+    }
     expect(starter).toBeDefined();
+    expect(paperWithQ).toBeDefined();
 
     // 2. Create attempt for student
     const studentId = 'test-student-unit';
-    const attempt = await repo.createAttempt(starter.id, studentId);
+    const attempt = await repo.createAttempt(starter!.id, studentId);
     expect(attempt.status).toBe('in_progress');
 
     // 3. Save an answer for question 1
-    const paperWithQ = await repo.getPaperById(starter.id);
     const q1 = paperWithQ!.questions![0];
     const correctOpt = q1.options.find((o) => o.is_correct);
 

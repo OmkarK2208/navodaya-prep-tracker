@@ -60,11 +60,18 @@ export default function AdminDashboardPage() {
         {/* Quick Action Buttons */}
         <div className="flex items-center gap-2.5">
           <Link
+            href="/admin/pdf-generator"
+            className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold text-xs shadow-md shadow-indigo-100 flex items-center gap-1.5 transition-all"
+          >
+            <Sparkles className="h-4 w-4" />
+            <span>AI / OCR PDF Generator</span>
+          </Link>
+          <Link
             href="/admin/papers/new"
             className="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-md shadow-indigo-100 flex items-center gap-1.5 transition-all"
           >
             <PlusCircle className="h-4 w-4" />
-            <span>Create New Paper</span>
+            <span>Manual Paper</span>
           </Link>
           <a
             href="/api/admin/export-csv"
@@ -122,6 +129,29 @@ export default function AdminDashboardPage() {
           </div>
           <div className="text-xs text-slate-500 mt-1">Average percentage</div>
         </div>
+      </div>
+
+      {/* AI / OCR PDF Generator Feature Banner */}
+      <div className="bg-gradient-to-r from-indigo-900 via-indigo-800 to-purple-900 rounded-3xl p-6 sm:p-8 text-white shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="space-y-2 max-w-2xl">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-indigo-200 border border-white/10 backdrop-blur">
+            <Sparkles className="h-3.5 w-3.5 text-amber-300" />
+            <span>New Feature • Automated Paper Digitization</span>
+          </div>
+          <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight">
+            Upload Navodaya PDF & Auto-Generate Exam
+          </h2>
+          <p className="text-xs sm:text-sm text-indigo-200 leading-relaxed">
+            Upload question paper PDFs in Marathi or English. Automatically extract questions, options (A, B, C, D), and crop visual reasoning diagrams with zero manual retyping. Verify the answer key and publish in minutes.
+          </p>
+        </div>
+        <Link
+          href="/admin/pdf-generator"
+          className="px-5 py-3 rounded-2xl bg-white text-indigo-900 hover:bg-indigo-50 font-extrabold text-xs sm:text-sm shadow-md transition-all flex items-center gap-2 shrink-0 group cursor-pointer"
+        >
+          <span>Launch PDF Generator</span>
+          <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+        </Link>
       </div>
 
       {/* Recent Submissions by Sister */}

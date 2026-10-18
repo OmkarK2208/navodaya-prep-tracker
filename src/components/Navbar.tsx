@@ -17,6 +17,7 @@ import {
   Menu,
   X,
   RefreshCw,
+  Sparkles,
 } from 'lucide-react';
 import { Profile } from '@/types/database';
 
@@ -176,6 +177,18 @@ export function Navbar() {
                   </span>
                 </Link>
                 <Link
+                  href="/admin/pdf-generator"
+                  className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    pathname.startsWith('/admin/pdf-generator')
+                      ? 'bg-indigo-50 text-indigo-700 font-semibold'
+                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+                  }`}
+                >
+                  <span className="flex items-center gap-1.5">
+                    <Sparkles className="h-4 w-4 text-indigo-600" /> PDF Generator
+                  </span>
+                </Link>
+                <Link
                   href="/admin/students"
                   className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-colors ${
                     pathname === '/admin/students'
@@ -290,6 +303,13 @@ export function Navbar() {
                 className="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100"
               >
                 Manage Papers
+              </Link>
+              <Link
+                href="/admin/pdf-generator"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 flex items-center gap-2"
+              >
+                <Sparkles className="h-4 w-4 text-indigo-600" /> PDF Generator
               </Link>
               <Link
                 href="/admin/students"

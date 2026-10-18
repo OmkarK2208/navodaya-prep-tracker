@@ -13,6 +13,7 @@ import {
   Calendar,
   AlertCircle,
   CheckCircle2,
+  Sparkles,
 } from 'lucide-react';
 
 export default function CreatePaperPage() {
@@ -115,6 +116,28 @@ export default function CreatePaperPage() {
           <p className="text-xs text-slate-500 mt-1">
             Configure the exam paper metadata, upload an optional PDF, and proceed to interactive question authoring
           </p>
+        </div>
+
+        {/* Quick Link to PDF Generator */}
+        <div className="mb-6 p-4 rounded-2xl bg-gradient-to-r from-indigo-50 via-purple-50 to-indigo-50 border border-indigo-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="h-10 w-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <Sparkles className="h-5 w-5" />
+            </div>
+            <div>
+              <h3 className="text-xs font-bold text-slate-900">Have a Navodaya PDF Question Paper?</h3>
+              <p className="text-[11px] text-slate-500">
+                Use our AI/OCR Question Generator to extract questions, options & diagrams automatically without manual entry!
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/admin/pdf-generator"
+            className="px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shrink-0 shadow-xs flex items-center gap-1.5"
+          >
+            <span>Auto-Generate</span>
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
         </div>
 
         {error && (

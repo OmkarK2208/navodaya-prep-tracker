@@ -14,6 +14,7 @@ import {
   Clock,
   Search,
   Filter,
+  Sparkles,
 } from 'lucide-react';
 import { Paper } from '@/types/database';
 
@@ -85,13 +86,22 @@ export default function AdminPapersListPage() {
           </p>
         </div>
 
-        <Link
-          href="/admin/papers/new"
-          className="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-md shadow-indigo-100 flex items-center gap-1.5 transition-all self-start sm:self-auto"
-        >
-          <PlusCircle className="h-4 w-4" />
-          <span>Create New Paper</span>
-        </Link>
+        <div className="flex items-center gap-2.5 self-start sm:self-auto">
+          <Link
+            href="/admin/pdf-generator"
+            className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold text-xs shadow-md shadow-indigo-100 flex items-center gap-1.5 transition-all"
+          >
+            <Sparkles className="h-4 w-4" />
+            <span>AI / OCR PDF Generator</span>
+          </Link>
+          <Link
+            href="/admin/papers/new"
+            className="px-4 py-2.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 font-bold text-xs shadow-xs flex items-center gap-1.5 transition-all"
+          >
+            <PlusCircle className="h-4 w-4 text-slate-600" />
+            <span>Manual Paper</span>
+          </Link>
+        </div>
       </div>
 
       {/* Search Bar */}
