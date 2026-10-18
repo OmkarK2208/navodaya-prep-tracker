@@ -222,7 +222,10 @@ export class SupabaseRepository implements IDataRepository {
         question_text: questionInput.question_text,
         question_image_url: questionInput.question_image_url,
         marks: questionInput.marks,
-        explanation: questionInput.explanation,
+        instructions: (questionInput as any).instructions || null,
+        explanation: questionInput.explanation || null,
+        is_uncertain: !!(questionInput as any).is_uncertain,
+        uncertainty_reason: (questionInput as any).uncertainty_reason || null,
       })
       .select()
       .single();

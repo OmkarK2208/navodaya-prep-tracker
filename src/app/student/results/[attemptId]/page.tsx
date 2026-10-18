@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { ExamAttempt, Paper } from '@/types/database';
 import { StudyTracker, formatStudyTime } from '@/components/study/StudyTracker';
+import confetti from 'canvas-confetti';
 
 export default function ExamResultPage() {
   const params = useParams();
@@ -35,7 +36,18 @@ export default function ExamResultPage() {
     fetch(`/api/exam/attempts/${attemptId}`)
       .then((res) => res.json())
       .then((data) => {
-        if (data.attempt) setAttempt(data.attempt);
+        if (data.attempt) {
+          setAttempt(data.attempt);
+          if (data.attempt.percentage >= 60) {
+            try {
+              confetti({
+                particleCount: 90,
+                spread: 70,
+                origin: { y: 0.6 },
+              });
+            } catch {}
+          }
+        }
         if (data.paper) setPaper(data.paper);
       })
       .catch(() => {})

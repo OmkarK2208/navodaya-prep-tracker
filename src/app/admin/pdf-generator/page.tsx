@@ -25,6 +25,7 @@ import {
   BookOpen,
   Filter,
 } from 'lucide-react';
+import { InteractiveQuestionImage } from '@/components/exam/InteractiveQuestionImage';
 
 interface ExtractedOption {
   option_label: 'A' | 'B' | 'C' | 'D';
@@ -855,6 +856,56 @@ export default function PdfGeneratorPage() {
             </button>
           </div>
 
+          {/* Quick Jump Matrix */}
+          <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-xs space-y-2">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-extrabold text-slate-800 flex items-center gap-1.5">
+                <Layers className="h-4 w-4 text-indigo-600" />
+                <span>Quick Jump Matrix ({questions.length} Questions)</span>
+              </span>
+              <div className="flex items-center gap-3 text-[11px] text-slate-500">
+                <span className="flex items-center gap-1">
+                  <span className="h-2 w-2 rounded-full bg-indigo-500" /> Has Image (
+                  {questions.filter((q) => q.question_image_url).length})
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="h-2 w-2 rounded-full bg-emerald-500" /> Answer Key Set (
+                  {questions.filter((q) => q.options.some((o) => o.is_correct)).length})
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-1.5 max-h-24 overflow-y-auto pt-1">
+              {questions.map((q) => {
+                const hasImg = !!q.question_image_url;
+                const hasKey = q.options.some((o) => o.is_correct);
+                const isUnc = !!q.is_uncertain;
+
+                return (
+                  <button
+                    key={q.question_number}
+                    type="button"
+                    onClick={() => {
+                      const el = document.getElementById(`q-card-${q.question_number}`);
+                      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }}
+                    className={`h-7 w-7 rounded-lg text-[11px] font-extrabold flex items-center justify-center transition-all cursor-pointer ${
+                      isUnc
+                        ? 'bg-amber-100 text-amber-900 border border-amber-300'
+                        : hasImg
+                        ? 'bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-600 hover:text-white'
+                        : hasKey
+                        ? 'bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-600 hover:text-white'
+                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200'
+                    }`}
+                    title={`Jump to Q${q.question_number} ${hasImg ? '(Visual Diagram)' : ''}`}
+                  >
+                    {q.question_number}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
           {/* Question List Cards */}
           <div className="space-y-4">
             {filteredQuestions.map((q) => {
@@ -866,6 +917,7 @@ export default function PdfGeneratorPage() {
               return (
                 <div
                   key={q.question_number}
+                  id={`q-card-${q.question_number}`}
                   className={`bg-white rounded-3xl border p-6 shadow-xs space-y-4 transition-all ${
                     isUncertain ? 'border-amber-300 ring-2 ring-amber-100' : 'border-slate-200'
                   }`}
@@ -947,26 +999,12 @@ export default function PdfGeneratorPage() {
 
                   {/* Diagram / Reasoning Image */}
                   {q.question_image_url && (
-                    <div className="p-3 bg-slate-50 rounded-2xl border border-slate-200 flex flex-col items-center">
-                      <div className="flex items-center justify-between w-full mb-2 px-1">
-                        <span className="text-[11px] font-bold text-slate-500 flex items-center gap-1">
-                          <ImageIcon className="h-3.5 w-3.5 text-indigo-600" />
-                          <span>Extracted Visual Diagram</span>
-                        </span>
-                        <a
-                          href={q.question_image_url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-[11px] font-bold text-indigo-600 hover:underline flex items-center gap-1"
-                        >
-                          <Eye className="h-3 w-3" />
-                          <span>View Full Image</span>
-                        </a>
-                      </div>
-                      <img
+                    <div className="my-2">
+                      <InteractiveQuestionImage
                         src={q.question_image_url}
                         alt={`Question ${q.question_number} diagram`}
-                        className="max-h-72 w-full rounded-2xl border border-slate-200 bg-white object-contain p-2"
+                        questionNumber={q.question_number}
+                        maxHeightClass="max-h-72"
                       />
                     </div>
                   )}

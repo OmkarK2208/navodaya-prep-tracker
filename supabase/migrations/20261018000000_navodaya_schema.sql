@@ -65,7 +65,10 @@ CREATE TABLE IF NOT EXISTS public.questions (
     question_text TEXT NOT NULL,
     question_image_url TEXT,
     marks NUMERIC(4, 2) NOT NULL DEFAULT 1.25,
+    instructions TEXT,
     explanation TEXT,
+    is_uncertain BOOLEAN NOT NULL DEFAULT false,
+    uncertainty_reason TEXT,
     is_ai_extracted BOOLEAN NOT NULL DEFAULT false,
     created_at TIMESTAMPTZ NOT NULL DEFAULT timezone('utc'::text, now()),
     CONSTRAINT uq_paper_question_number UNIQUE (paper_id, question_number)

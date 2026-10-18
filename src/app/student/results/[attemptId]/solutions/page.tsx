@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { ExamAttempt, Paper, Question } from '@/types/database';
 import { StudyTracker } from '@/components/study/StudyTracker';
+import { InteractiveQuestionImage } from '@/components/exam/InteractiveQuestionImage';
 
 export default function SolutionsReviewPage() {
   const params = useParams();
@@ -209,12 +210,12 @@ export default function SolutionsReviewPage() {
 
                 {/* Question Figure / Diagram */}
                 {(q as any).question_image_url && (
-                  <div className="max-w-2xl mx-auto my-3 rounded-2xl overflow-hidden border border-slate-200 bg-white p-2 shadow-xs">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <div className="max-w-2xl mx-auto my-3">
+                    <InteractiveQuestionImage
                       src={(q as any).question_image_url}
                       alt={`Figure for Question ${q.question_number}`}
-                      className="w-full object-contain max-h-72"
+                      questionNumber={q.question_number}
+                      maxHeightClass="max-h-72"
                     />
                   </div>
                 )}
